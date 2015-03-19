@@ -129,6 +129,7 @@ The following conventions are used in this document:
 - `<BillSummaries>` 
 
   Root element. 
+
 - `<item>` 
 
   Parent container for a single legislative measure.
@@ -136,20 +137,24 @@ The following conventions are used in this document:
 
   The latest title for the measure.  It may be the official title or the short 
   title. It is contained within `<item>`. 
+
 - `<summary>` 
 
   Parent container for a single summary.  It may appear one or more times in 
   the file. It is contained within `<item>`. 
+
 - `<action-date>` 
 
   The date on which a particular action occurred. The format is YYYY‐MM‐DD. It 
   is contained within `<summary>`. 
+
 - `<action-desc>` 
 
   The description of the action that took place to prompt the bill summary to 
   be written. It is contained within `<summary>`. This value is added by CRS.
  
   See Section 3 of this document for a list of possible values. 
+
 - `<summary-text>` 
 
   This is the text of the summary written by the Congressional Research Service
@@ -160,17 +165,24 @@ The following conventions are used in this document:
 ### 2.2 Attributes
 
 - `@congress` 
+
   The number of the Congress. This is an attribute of `<item>`. 
+
 - `@measure-type`
+
   The type of measure. This is an attribute of `<item>`. The measure type 
   abbreviations that can be found in bill summaries are hr, hjres, hconres, 
   hres, s, sconres, sres, and sjres.
  
   See Section 1.1 of this document for a description of each measure type. 
+
 - `@measure-number` 
+
   The number associated with the measure. This is commonly referred to as the 
   bill number. This is an attribute of `<item>`. 
+
 - `@measure-id` 
+
   An ID assigned to the measure. This is an attribute of `<item>`.
  
   Convention: “id” + Congress number + measure type abbreviation + measure 
@@ -184,15 +196,22 @@ The following conventions are used in this document:
   See Section 1.1 of this document for a description of each measure type. 
 
 - `@originChamber` 
+
   The chamber in which the measure originated. This is an attribute of 
   `<item>`. Value will be HOUSE or SENATE.
+
 - `@orig-publish-date` 
+
   The first date in which the bill summary file was published. The format is 
   YYYY‐MM‐DD. This is an attribute of `<item>`. 
+
 - `@update-date` 
+
   The date in which the material in the container element was last updated. The
   format is YYYY‐MM‐DD. This is an attribute of `<item>` and `<summary>`. 
+
 - `@summary-id` 
+
   An ID assigned to the individual summary. This is an attribute of `<summary>`. 
  
   Convention:  “id” + Congress number + measure type abbreviation + measure 
@@ -204,7 +223,9 @@ The following conventions are used in this document:
   hjres, hconres, hres, s, sconres, sres, and sjres. 
  
   See Section 3 of this document for a list of LOC action codes for summaries. 
+
 - `@currentChamber`
+
   The chamber in which the action described in the `<action-desc>` element 
   occurred. This is an attribute of `<summary>`. Value will be HOUSE, SENATE, 
   or BOTH. 
