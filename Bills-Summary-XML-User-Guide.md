@@ -118,33 +118,40 @@ specific measure.
 
 The following conventions are used in this document:
 
- - XML element names are denoted with angled brackets and in courier. For example,
-`<title>` is an XML element.
+- XML element names are denoted with angled brackets and in courier. For example,
+  `<title>` is an XML element.
 - XML attribute names are denoted with a “@” prefix and in courier. For example, @href
-is an XML attribute.
+  is an XML attribute.
  
 
 ### 2.2 Elements
 
 - `<BillSummaries>` 
+
   Root element. 
 - `<item>` 
+
   Parent container for a single legislative measure.
 - `<title>` 
+
   The latest title for the measure.  It may be the official title or the short 
   title. It is contained within `<item>`. 
 - `<summary>` 
+
   Parent container for a single summary.  It may appear one or more times in 
   the file. It is contained within `<item>`. 
 - `<action-date>` 
+
   The date on which a particular action occurred. The format is YYYY‐MM‐DD. It 
   is contained within `<summary>`. 
 - `<action-desc>` 
+
   The description of the action that took place to prompt the bill summary to 
   be written. It is contained within `<summary>`. This value is added by CRS.
  
   See Section 3 of this document for a list of possible values. 
 - `<summary-text>` 
+
   This is the text of the summary written by the Congressional Research Service
   of the Library of Congress. It is contained within `<summary>`. Values are 
   enclosed in a CDATA tag and contain HTML elements.
@@ -249,97 +256,96 @@ accompanies this file.</dc:description>
 
 ## 3. Mapping of LOC Action Codes, Action Description Text, and Version Codes
 
-LOC Action Code | Chamber | Text in the `<action‐desc>` Element                             | LOC Version Code
-for Summaries   |         |                                                                 |
-----------------|---------|-----------------------------------------------------------------|-----------------
-00              | HOUSE   | Introduced in House                                             | IH
-00              | SENATE  | Introduced in Senate                                            | IS
-01              | SENATE  | Reported to Senate amended                                      | RS
-02              | SENATE  | Reported to Senate amended, 1st committee reporting             | RS
-03              | SENATE  | Reported to Senate amended, 2nd committee reporting             | RS
-04              | SENATE  | Reported to Senate amended, 3rd committee reporting             | RS
-05              | SENATE  | Reported to Senate amended, 4th committee reporting             | RS
-06              | SENATE  | Reported to Senate amended, 5th committee reporting             | RS
-07              | SENATE  | Reported to Senate amended, 6th committee reporting             | RS
-08              | SENATE  | Reported to Senate amended, 7th committee reporting             | RS
-09              | SENATE  | Reported to Senate amended, 8th committee reporting             | RS
-10              | SENATE  | Reported to Senate amended, 9th committee reporting             | RS
-11              | SENATE  | Reported to Senate amended, 10th committee reporting            | RS
-12              | SENATE  | Reported to Senate without amendment, 1st committee reporting   | RS
-13              | SENATE  | Reported to Senate without amendment, 2nd committee reporting   | RS
-14              | SENATE  | Reported to Senate without amendment, 3rd committee reporting   | RS
-15              | SENATE  | Reported to Senate without amendment, 4th committee reporting   | RS
-16              | SENATE  | Reported to Senate without amendment, 5th committee reporting   | RS
-17              | HOUSE   | Reported to House amended                                       | RH
-18              | HOUSE   | Reported to House amended, Part I                               | RH
-19              | HOUSE   | Reported to House amended, Part II                              | RH
-20              | HOUSE   | Reported to House amended, Part III                             | RH
-21              | HOUSE   | Reported to House amended, Part IV                              | RH
-22              | HOUSE   | Reported to House amended, Part V                               | RH
-23              | HOUSE   | Reported to House amended, Part VI                              | RH
-24              | HOUSE   | Reported to House amended, Part VII                             | RH
-25              | HOUSE   | Reported to House amended, Part VIII                            | RH
-26              | HOUSE   | Reported to House amended, Part IX                              | RH
-27              | HOUSE   | Reported to House amended, Part X                               | RH
-28              | HOUSE   | Reported to House without amendment, Part I                     | RH
-29              | HOUSE   | Reported to House without amendment, Part II                    | RH
-30              | HOUSE   | Reported to House without amendment, Part III                   | RH
-31              | HOUSE   | Reported to House without amendment, Part IV                    | RH
-32              | HOUSE   | Reported to House without amendment, Part V                     | RH
-33              | HOUSE   | Laid on table in House                                          | LTH
-34              | SENATE  | Indefinitely postponed in Senate                                | IPS
-35              | SENATE  | Passed Senate amended                                           | ES
-36              | HOUSE   | Passed House amended                                            | EH
-37              | SENATE  | Failed of passage in Senate                                     | FPS
-38              | HOUSE   | Failed of passage in House                                      | FPH
-39              | HOUSE   | Senate agreed to House amendment with amendment                 | ATS
-40              | SENATE  | House agreed to Senate amendment with amendment                 | ATH
-41              | HOUSE   | Senate disagreed to House amendment with amendment              | NAT
-42              | SENATE  | House disagreed to Senate amendment with amendment              | NAT
-43              | HOUSE   | Senate disagreed to House amendment                             | NAT
-44              | SENATE  | House disagreed to Senate amendment                             | NAT
-45              | SENATE  | Senate receded and concurred with amendment                     | AES
-46              | HOUSE   | House receded and concurred with amendment                      | EAH
-47              | SENATE  | Conference report filed in Senate                               | CONF-S
-48              | HOUSE   | Conference report filed in House                                | CONF-H
-49              | BOTH    | Public Law                                                      | LAW
-50              | BOTH    | Private Law                                                     | LAW
-51              | BOTH    | Line item veto by President                                     | LINEITEMVETO
-52              | SENATE  | Passed Senate amended, 2nd occurrence                           | ES
-53              | SENATE  | Passed Senate amended, 3rd occurrence                           | ES
-54              | HOUSE   | Passed House amended, 2nd occurrence                            | EH
-55              | HOUSE   | Passed House amended, 3rd occurrence                            | EH
-56              | SENATE  | Senate vitiated passage of bill after amendment                 | PAV
-57              | HOUSE   | House vitiated passage of bill after amendment                  | PAV
-58              | SENATE  | Motion to recommit bill as amended in Senate                    | MOTION_R-S
-59              | HOUSE   | Motion to recommit bill as amended in House                     | MOTION_R-H
-60              | SENATE  | Senate agreed to House amendment with amendment, 2nd occurrence | ATS
-61              | SENATE  | Senate agreed to House amendment with amendment, 3rd occurrence | ATS
-62              | HOUSE   | House agreed to Senate amendment with amendment, 2nd occurrence | ATH
-63              | HOUSE   | House agreed to Senate amendment with amendment, 3rd occurrence | ATH
-64              | SENATE  | Senate receded and concurred with amendment, 2nd occurrence     | AES
-65              | SENATE  | Senate receded and concurred with amendment, 3rd occurrence     | AES
-66              | HOUSE   | House receded and concurred with amendment, 2nd occurrence      | EAH
-67              | HOUSE   | House receded and concurred with amendment, 3rd occurrence      | EAH
-70              | HOUSE   | Hearing scheduled in House                                      | HRG-SCD-H
-71              | SENATE  | Hearing scheduled in Senate                                     | HRG-SCD-S
-72              | HOUSE   | Hearing held in House                                           | HRG-H
-73              | SENATE  | Hearing held in Senate                                          | HRG-S
-74              | HOUSE   | Markup in House                                                 | MKUP-H
-75              | SENATE  | Markup in Senate                                                | MKUP-S
-76              | HOUSE   | Rule reported to House                                          | RULE-H
-77              | HOUSE   | Discharged from House committee                                 | CDH
-78              | SENATE  | Discharged from Senate committee                                | CDS
-79              | HOUSE   | Reported to House, without amendment                            | RH
-80              | SENATE  | Reported to Senate without amendment                            | RS
-81              | HOUSE   | Passed House, without amendment                                 | EH
-82              | SENATE  | Passed Senate, without amendment                                | ES
-83              | SENATE  | Conference report filed in Senate, 2nd conference report        | CONF-S
-84              | SENATE  | Conference report filed in Senate, 3rd conference report        | CONF-S
-85              | SENATE  | Conference report filed in Senate, 4th conference report        | CONF-S
-86              | HOUSE   | Conference report filed in House, 2nd conference report         | CONF-H
-87              | HOUSE   | Conference report filed in House, 3rd conference report         | CONF-H
-88              | HOUSE   | Conference report filed in House, 4th conference report         | CONF-H
+LOC Action Code for Summaries| Chamber | Text in the `<action‐desc>` Element                             | LOC Version Code
+-----------------------------|---------|-----------------------------------------------------------------|-----------------
+00                           | HOUSE   | Introduced in House                                             | IH
+00                           | SENATE  | Introduced in Senate                                            | IS
+01                           | SENATE  | Reported to Senate amended                                      | RS
+02                           | SENATE  | Reported to Senate amended, 1st committee reporting             | RS
+03                           | SENATE  | Reported to Senate amended, 2nd committee reporting             | RS
+04                           | SENATE  | Reported to Senate amended, 3rd committee reporting             | RS
+05                           | SENATE  | Reported to Senate amended, 4th committee reporting             | RS
+06                           | SENATE  | Reported to Senate amended, 5th committee reporting             | RS
+07                           | SENATE  | Reported to Senate amended, 6th committee reporting             | RS
+08                           | SENATE  | Reported to Senate amended, 7th committee reporting             | RS
+09                           | SENATE  | Reported to Senate amended, 8th committee reporting             | RS
+10                           | SENATE  | Reported to Senate amended, 9th committee reporting             | RS
+11                           | SENATE  | Reported to Senate amended, 10th committee reporting            | RS
+12                           | SENATE  | Reported to Senate without amendment, 1st committee reporting   | RS
+13                           | SENATE  | Reported to Senate without amendment, 2nd committee reporting   | RS
+14                           | SENATE  | Reported to Senate without amendment, 3rd committee reporting   | RS
+15                           | SENATE  | Reported to Senate without amendment, 4th committee reporting   | RS
+16                           | SENATE  | Reported to Senate without amendment, 5th committee reporting   | RS
+17                           | HOUSE   | Reported to House amended                                       | RH
+18                           | HOUSE   | Reported to House amended, Part I                               | RH
+19                           | HOUSE   | Reported to House amended, Part II                              | RH
+20                           | HOUSE   | Reported to House amended, Part III                             | RH
+21                           | HOUSE   | Reported to House amended, Part IV                              | RH
+22                           | HOUSE   | Reported to House amended, Part V                               | RH
+23                           | HOUSE   | Reported to House amended, Part VI                              | RH
+24                           | HOUSE   | Reported to House amended, Part VII                             | RH
+25                           | HOUSE   | Reported to House amended, Part VIII                            | RH
+26                           | HOUSE   | Reported to House amended, Part IX                              | RH
+27                           | HOUSE   | Reported to House amended, Part X                               | RH
+28                           | HOUSE   | Reported to House without amendment, Part I                     | RH
+29                           | HOUSE   | Reported to House without amendment, Part II                    | RH
+30                           | HOUSE   | Reported to House without amendment, Part III                   | RH
+31                           | HOUSE   | Reported to House without amendment, Part IV                    | RH
+32                           | HOUSE   | Reported to House without amendment, Part V                     | RH
+33                           | HOUSE   | Laid on table in House                                          | LTH
+34                           | SENATE  | Indefinitely postponed in Senate                                | IPS
+35                           | SENATE  | Passed Senate amended                                           | ES
+36                           | HOUSE   | Passed House amended                                            | EH
+37                           | SENATE  | Failed of passage in Senate                                     | FPS
+38                           | HOUSE   | Failed of passage in House                                      | FPH
+39                           | HOUSE   | Senate agreed to House amendment with amendment                 | ATS
+40                           | SENATE  | House agreed to Senate amendment with amendment                 | ATH
+41                           | HOUSE   | Senate disagreed to House amendment with amendment              | NAT
+42                           | SENATE  | House disagreed to Senate amendment with amendment              | NAT
+43                           | HOUSE   | Senate disagreed to House amendment                             | NAT
+44                           | SENATE  | House disagreed to Senate amendment                             | NAT
+45                           | SENATE  | Senate receded and concurred with amendment                     | AES
+46                           | HOUSE   | House receded and concurred with amendment                      | EAH
+47                           | SENATE  | Conference report filed in Senate                               | CONF-S
+48                           | HOUSE   | Conference report filed in House                                | CONF-H
+49                           | BOTH    | Public Law                                                      | LAW
+50                           | BOTH    | Private Law                                                     | LAW
+51                           | BOTH    | Line item veto by President                                     | LINEITEMVETO
+52                           | SENATE  | Passed Senate amended, 2nd occurrence                           | ES
+53                           | SENATE  | Passed Senate amended, 3rd occurrence                           | ES
+54                           | HOUSE   | Passed House amended, 2nd occurrence                            | EH
+55                           | HOUSE   | Passed House amended, 3rd occurrence                            | EH
+56                           | SENATE  | Senate vitiated passage of bill after amendment                 | PAV
+57                           | HOUSE   | House vitiated passage of bill after amendment                  | PAV
+58                           | SENATE  | Motion to recommit bill as amended in Senate                    | MOTION_R-S
+59                           | HOUSE   | Motion to recommit bill as amended in House                     | MOTION_R-H
+60                           | SENATE  | Senate agreed to House amendment with amendment, 2nd occurrence | ATS
+61                           | SENATE  | Senate agreed to House amendment with amendment, 3rd occurrence | ATS
+62                           | HOUSE   | House agreed to Senate amendment with amendment, 2nd occurrence | ATH
+63                           | HOUSE   | House agreed to Senate amendment with amendment, 3rd occurrence | ATH
+64                           | SENATE  | Senate receded and concurred with amendment, 2nd occurrence     | AES
+65                           | SENATE  | Senate receded and concurred with amendment, 3rd occurrence     | AES
+66                           | HOUSE   | House receded and concurred with amendment, 2nd occurrence      | EAH
+67                           | HOUSE   | House receded and concurred with amendment, 3rd occurrence      | EAH
+70                           | HOUSE   | Hearing scheduled in House                                      | HRG-SCD-H
+71                           | SENATE  | Hearing scheduled in Senate                                     | HRG-SCD-S
+72                           | HOUSE   | Hearing held in House                                           | HRG-H
+73                           | SENATE  | Hearing held in Senate                                          | HRG-S
+74                           | HOUSE   | Markup in House                                                 | MKUP-H
+75                           | SENATE  | Markup in Senate                                                | MKUP-S
+76                           | HOUSE   | Rule reported to House                                          | RULE-H
+77                           | HOUSE   | Discharged from House committee                                 | CDH
+78                           | SENATE  | Discharged from Senate committee                                | CDS
+79                           | HOUSE   | Reported to House, without amendment                            | RH
+80                           | SENATE  | Reported to Senate without amendment                            | RS
+81                           | HOUSE   | Passed House, without amendment                                 | EH
+82                           | SENATE  | Passed Senate, without amendment                                | ES
+83                           | SENATE  | Conference report filed in Senate, 2nd conference report        | CONF-S
+84                           | SENATE  | Conference report filed in Senate, 3rd conference report        | CONF-S
+85                           | SENATE  | Conference report filed in Senate, 4th conference report        | CONF-S
+86                           | HOUSE   | Conference report filed in House, 2nd conference report         | CONF-H
+87                           | HOUSE   | Conference report filed in House, 3rd conference report         | CONF-H
+88                           | HOUSE   | Conference report filed in House, 4th conference report         | CONF-H
 
 
 ## 4. Data Set
