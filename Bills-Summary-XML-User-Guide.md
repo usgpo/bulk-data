@@ -1,12 +1,13 @@
-U.S. Government Printing Office Federal Digital System (FDsys) User Guide Document
-==================================================================================
+U.S. Government Publishing Office Federal Digital System (FDsys) User Guide Document
+================================================================================
+
 
 
 ## Bill Summaries XML Bulk Data
 
-Prepared by: Programs, Strategy and Technology
+Prepared by: Programs, Strategy, and Technology
 
-U.S. Government Printing Office
+U.S. Government Publishing Office
 
 January 2015
 
@@ -23,14 +24,14 @@ January 2015
 
 At the direction of the Appropriations Committee within the United States House of
 Representatives, in support of the Legislative Branch Bulk Data Task Force, the Government
-Printing Office (GPO), the Library of Congress (LOC), the Clerk of the House, and the Secretary
+Publishing Office (GPO), the Library of Congress (LOC), the Clerk of the House, and the Secretary
 of the Senate are making Bill Summaries in XML format available through the GPO’s Federal
 Digital System (FDsys) Bulk Data repository starting with the 113th Congress. The FDsys Bulk
 Data repository for Bill Summaries is available at
 <http://www.gpo.gov/fdsys/bulkdata/BILLSUM>.
 
 
-### 1.1 Types of Bill Summaries
+###1.1 Types of Bill Summaries
 
 Bill summaries are summaries of bills or resolutions, as well as other document types associated
 with the legislative history of a measure such as amendments, committee reports, conference
@@ -124,7 +125,7 @@ The following conventions are used in this document:
   is an XML attribute.
  
 
-### 2.2 Elements
+### 2.1 Elements
 
 - `<BillSummaries>` 
 
@@ -174,7 +175,7 @@ The following conventions are used in this document:
   abbreviations that can be found in bill summaries are hr, hjres, hconres, 
   hres, s, sconres, sres, and sjres.
  
-  See Section 1.1 of this document for a description of each measure type. 
+  See [Section 1.1](1.1-Types-of-Bill-Summaries)  of this document for a description of each measure type. 
 
 - `@measure-number` 
 
@@ -193,7 +194,7 @@ The following conventions are used in this document:
   The measure type abbreviations that can be found in bill summaries are 
   hr, hjres, hconres, hres, s, sconres, sres, and sjres.
  
-  See Section 1.1 of this document for a description of each measure type. 
+  See [Section 1.1](1.1-Types-of-Bill-Summaries) of this document for a description of each measure type. 
 
 - `@originChamber` 
 
@@ -395,4 +396,4 @@ whether the downloaded data can be relied upon within an application or mash-up.
 ## 5. Resources Directory
 
 The resources directory at <http://www.gpo.gov/fdsys/bulkdata/BILLSUM/resources> 
-contains the *User Guide for Bill Summaries XML Bulk Data*.
+contains the *User Guide for Bill Summaries XML Bulk Data* in PDF form.
