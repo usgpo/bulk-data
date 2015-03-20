@@ -1,4 +1,4 @@
-U.S. Government Printing Office Federal Digital System (FDsys) User Guide Document
+U.S. Government Publishing Office Federal Digital System (FDsys) User Guide Document
 ==================================================================================
 
 ## Bills XML Bulk Data
@@ -102,8 +102,7 @@ Congress.
 A. Bill files in XML are provided to GPO by the House of Representatives and Senate and are
 available starting in 2013 with the 113th Congress.
 
-###Q. How do the bulk XML files offered on the FDsys Bulk Data repository relate to the
-digitally signed PDF files available on FDsys?
+###Q. How do the bulk XML files offered on the FDsys Bulk Data repository relate to the digitally signed PDF files available on FDsys?
 
 A. GPO makes Congressional Bills from the 103rd Congress forward available on FDsys in
 digitally signed PDF and HTML formats. Generally, House and Senate bills from the 111th
@@ -129,8 +128,7 @@ restrict or adversely affect the XML bulk data downloads. The integrity of a bil
 verified by checking its SHA-256 hash value against the hash value recorded in the PREMIS
 metadata file for each bill on FDsys.
 
-### Q. What is the authenticity of bill XML files after they have been downloaded to another
-site?
+### Q. What is the authenticity of bill XML files after they have been downloaded to another site?
 
 A. We cannot vouch for the authenticity of data that is not under GPO’s control. GPO is
 providing free access to bill data via XML for display in various applications and mash-ups
@@ -145,14 +143,13 @@ assurance. The authenticated digitally-signed PDF is available on FDsys at
 
 A. In general, there are no restrictions on re-use of information in bills because U.S.
 Government works are not subject to copyright. GPO does not restrict downstream uses of bill
-data, except that independent providers should be aware that only GPO and it’s legislative
+data, except that independent providers should be aware that only GPO and its legislative
 branch data partners are entitled to represent that they are the providers of the official versions of
 bills.
 
 ### Q. How can re-publishers indicate the source of a bill XML file?
 
-A. Re-publishers of bills in XML may cite FDsys and GPO as the source of their data, and they
-are free to characterize the quality of data as it appears on their site.
+A. Re-publishers of bills in XML may cite FDsys and GPO as the source of their data, and they are free to characterize the quality of data as it appears on their site.
 
 ## Resources Directory
 
@@ -160,4 +157,4 @@ The resources directory at <http://www.gpo.gov/fdsys/bulkdata/BILLS/resources> c
 current version of the DTD, stylesheets, and associated graphics which, when placed in the same
 directory as a bill XML file, are used to display the XML file in a browser. Additional
 information about bills in XML can be found at <http://xml.house.gov>.
-4
+
