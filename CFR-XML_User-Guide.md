@@ -322,7 +322,8 @@ The abbreviated example of the TITLE, CHAPTER, PART and SUBPART tags are shown b
   .
   .
   .
-</CFRDOC>```
+</CFRDOC>
+```
 
 &nbsp;
 
@@ -515,7 +516,8 @@ An abbreviated example of the CHAPTER section and structure is below:
  .
  .
 
-</CFRDOC>```
+</CFRDOC>
+```
 
 &nbsp;
 
