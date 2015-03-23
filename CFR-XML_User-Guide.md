@@ -37,7 +37,7 @@ The purpose of this document is to provide an overview of Code of Federal Regula
 
 **Q. &nbsp;Are bulk data downloads of XML files offered on FDsys via Data.gov and FDsys part of the official version of the Code of Federal Regulations?**
 
-**A.** No, the XML-structured files offered for bulk download are not part of the official on-line format of the _Code of Federal Regulations_. While GPO's XML files are based on the original source data submitted by Federal agencies, OFR markup, and GPO typesetting and composition markup in SGML, only the PDF and Text versions of _Code of Federal Regulations_content on GPO Access and FDsys have legal status as parts of the official online format of the _Code of Federal Regulations_. &nbsp;Additional development will be required before OFR/GPO can specify that XML files are a part of the official online edition of the _Code of Federal Regulations_. &nbsp;
+**A.** No, the XML-structured files offered for bulk download are not part of the official on-line format of the _Code of Federal Regulations_. While GPO's XML files are based on the original source data submitted by Federal agencies, OFR markup, and GPO typesetting and composition markup in SGML, only the PDF and Text versions of _Code of Federal Regulations_ content on GPO Access and FDsys have legal status as parts of the official online format of the _Code of Federal Regulations_. &nbsp;Additional development will be required before OFR/GPO can specify that XML files are a part of the official online edition of the _Code of Federal Regulations_. &nbsp;
 
 &nbsp;
 
@@ -170,7 +170,7 @@ The following table lists the SGML tags that were removed or collapsed into a so
 
 This section describes the top-level structure of Code of the Federal Regulations XML file.
 
-The XML schema, being a translated reproduction of the SGML schema, contains tags and content in the same order as they appear in the printed document. Major sections are grouped appropriately (`<TOC>`, `<PART>`, `<SUBPART>`, `<CITE>`, `<EXPLA>`, `<SECTION>`, `<CHAPTER>`, `<ALPHLIST>`), and all data and tags are represented – with the exception of the reduced tags from the previous section. **The XML tags above are not a complete set of what is available in the Code of Federal Regulations.**
+The XML schema, being a translated reproduction of the SGML schema, contains tags and content in the same order as they appear in the printed document. Major sections are grouped appropriately (`<TOC>`, `<PART>`, `<SUBPART>`, `<CITE>`, `<EXPLA>`, `<SECTION>`, `<CHAPTER>`, `<ALPHLIST>`), and all data and tags are represented Â– with the exception of the reduced tags from the previous section. **The XML tags above are not a complete set of what is available in the Code of Federal Regulations.**
 
 The XML tags and their descriptions of the TOC schema above is shown below:
 
@@ -207,10 +207,10 @@ An abbreviated example of the overall section and structure is below:
     <TITLENO>  
         <HD SOURCE="HED">Title 7:</HD>  
         <SUBTI>  
-            <HD SOURCE="HED">Subtitle B—Regulations of the...</HD>  
+            <HD SOURCE="HED">Subtitle BÂ—Regulations of the...</HD>  
         </SUBTI>  
         <CHAPTI>  
-            <SUBJECT>Chapter X—Agricultural Marketing Service... </SUBJECT>  
+            <SUBJECT>Chapter XÂ—Agricultural Marketing Service... </SUBJECT>  
             <PG>5</PG>  
         </CHAPTI>  
     </TITLENO>  
@@ -279,15 +279,15 @@ The abbreviated example of the TITLE, CHAPTER, PART and SUBPART tags are shown b
     <TITLE>  
         <CHAPTER>  
             <SUBCHAP>  
-                <HD SOURCE="HED">SUBCHAPTER C—AIR PROGRAMS (CONTINUED)</HD>  
+                <HD SOURCE="HED">SUBCHAPTER CÂ—AIR PROGRAMS (CONTINUED)</HD>  
                 <PART>  
-                    <HD SOURCE="HED">PART 53—AMBIENT AIR MONITORING...</HD>  
+                    <HD SOURCE="HED">PART 53Â—AMBIENT AIR MONITORING...</HD>  
                     <CONTENTS>
                          .
                          .
                          .  
                         <SUBPART>  
-                            <HD SOURCE="HED">Subpart A—General Provisions</HD>  
+                            <HD SOURCE="HED">Subpart AÂ—General Provisions</HD>  
                             <SECHD>Sec.</SECHD>  
                             <SECTNO>53.1</SECTNO>  
                             <SUBJECT>Definitions.</SUBJECT>  
@@ -300,7 +300,7 @@ The abbreviated example of the TITLE, CHAPTER, PART and SUBPART tags are shown b
                          .
                          .  
                         <SUBPART>  
-                            <HD SOURCE="HED">Subpart B—Procedures for...</HD>  
+                            <HD SOURCE="HED">Subpart BÂ—Procedures for...</HD>  
                             <SECTNO>53.20</SECTNO>  
                             <SUBJECT>General provisions.</SUBJECT>  
                             <SECTNO>53.21</SECTNO>  
@@ -433,7 +433,7 @@ The contents will roughly have the same structure:
  .
 
  <SECTION>  
-   <SECTNO>§ 1007.51</SECTNO>  
+   <SECTNO>Â§ 1007.51</SECTNO>  
    <SUBJECT>Class I differential, adjustments to Class I prices...</SUBJECT>  
    <P>(a) The Class I differential shall be the differential...</P>  
    <P>(b) Adjustment to Class I prices. Class I prices shall...</P>  
@@ -497,12 +497,12 @@ An abbreviated example of the CHAPTER section and structure is below:
    <CHAPNO>10 CFR (PARTS 200-499)</CHAPNO>  
    <AGENCY>DEPARTMENT OF ENERGY</AGENCY>  
    <CFRHD>10 CFR</CFRHD>  
-   <ONOTE>PART 300—VOLUNTARY GREENHOUSE GAS REPORTING PROGRAM...</ONOTE>  
-   <OWNER>US Department of Energy, Office of Policy and International…</OWNER>  
+   <ONOTE>PART 300Â—VOLUNTARY GREENHOUSE GAS REPORTING PROGRAM...</ONOTE>  
+   <OWNER>US Department of Energy, Office of Policy and InternationalÂ…</OWNER>  
    <ADDR>1000 Independence Avenue, SW; Washington, DC 20585</ADDR>  
    <PUBLI>Technical Guidelines for the Voluntary Reporting of...</PUBLI>  
    <CFRNO>300.1, 300.5, 300.6, 300.8, 300.9, 300.12, 300.13</CFRNO>  
-   <ONOTE>PART 420—STATE ENERGY PROGRAM</ONOTE>  
+   <ONOTE>PART 420Â—STATE ENERGY PROGRAM</ONOTE>  
    <OWNER>American Society of Heating, Refrigerating and Air...</OWNER>  
    .  
    .  
