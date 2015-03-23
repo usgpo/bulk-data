@@ -227,7 +227,8 @@ An abbreviated example of the overall section and structure is below:
 .  
 .  
 .  
-</CFRDOC>```
+</CFRDOC>
+```
 
 ###2.2.2 XPath Examples
 
@@ -399,7 +400,8 @@ An abbreviated example of the CITE and EXPLA section and structure is below:
  .
  .
  .
-</CFRDOC>```
+</CFRDOC>
+```
 
 &nbsp;
 
@@ -459,7 +461,8 @@ The contents will roughly have the same structure:
  .
  .
  .
-</CFRDOC>```
+</CFRDOC>
+```
 
 &nbsp;
 
@@ -555,7 +558,8 @@ An abbreviated example of the ALPHLIST section and structure is below:
   .
   .
   .
-</CFRDOC>```
+</CFRDOC>
+```
 
 &nbsp;
 
