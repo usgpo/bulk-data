@@ -224,7 +224,7 @@ The XML tags and their descriptions of the schema above are shown below:
 An abbreviated example of the overall section and structure is below:
 
  
-
+```
 <FEDREG>
 
   <VOL>65</VOL>
@@ -263,6 +263,7 @@ An abbreviated example of the overall section and structure is below:
   .
 
 </FEDREG>
+```
 
 ###2.2.1.XPath Examples
 
@@ -302,7 +303,7 @@ The XML tags and their descriptions of the schema above are shown below:
 An abbreviated example of the NEWPART section and structure is below:
 
 &nbsp;
-
+```
 <FEDREG>
    .
    .
@@ -321,6 +322,7 @@ An abbreviated example of the NEWPART section and structure is below:
     </PRESDOCS>
   </NEWPART>
 </FEDREG>
+```
 
 ##2.4.The Contents of Article
 
@@ -343,9 +345,8 @@ The contents of article tags are the ones that usually describe the majority of 
 The contents will roughly have the same structure
 
  
-
+```
 <FEDREG>
-
    .
    .
    .
@@ -383,7 +384,7 @@ The contents will roughly have the same structure
   .
   .
 </FEDREG>
-
+```
 &nbsp;
 
 ##2.5.PREAMBLE Tag
@@ -415,7 +416,7 @@ The XML tags and their descriptions of the schema above are shown below:
 An abbreviated example of the PREAMB section and structure is below:
 
 &nbsp;
-
+```
 <RULE>
 
   <PREAMB>
@@ -436,7 +437,7 @@ An abbreviated example of the PREAMB section and structure is below:
   <FRDOC>[FR Doc. E8-4768 Filed 3-7-08; 8:45 am]</FRDOC>
   <BILCOD>BILLING CODE 7590-01-P</BILCOD>
 </RULE>
-
+```
 &nbsp;
 
 ##2.6.SUPLINF Tag
@@ -458,7 +459,7 @@ The XML tags and their descriptions of the SUPLINF schema are shown below.
 An abbreviated example of the SUPLINF section and structure is below:
 
 &nbsp;
-
+```
 <RULE>
 ...
 <SUPLINF>
@@ -473,6 +474,7 @@ An abbreviated example of the SUPLINF section and structure is below:
   </SUPLINF>
 ...
 </RULE>
+```
 &nbsp;
 
 ##2.7.Presidential Documents
@@ -502,7 +504,7 @@ The XML tags and their descriptions of the schema above are shown below:
 An abbreviated example of the PRESDOCS section and structure is below:
 
 &nbsp;
-
+```
 <FEDREG>
 ...  
   <NEWPART>
@@ -533,9 +535,7 @@ An abbreviated example of the PRESDOCS section and structure is below:
   </NEWPART>
 ...
 </FEDREG>
-
-&nbsp;
-
+```
 &nbsp;
 
 #3.Resources Directory
