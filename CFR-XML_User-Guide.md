@@ -13,7 +13,7 @@ U.S. Government Publishing Office
 - 1.1 March 2015
   Markdown version
 
-#1 Introduction
+#1.Introduction
 
 The U.S. Government Publishing Office (GPO) and the National Archives' Office of the Federal Register (OFR) partnership is offering bulk data downloads of Code of Federal Regulations (CFR) files to the general public via Data.gov and FDsys. This effort began when the President challenged Federal agencies to create a more open and transparent government, promote accountability, and provide information to citizens about what their Government is doing (see [74 FR 4685, January 26, 2009](http://www.gpo.gov/fdsys/pkg/FR-2009-01-26/pdf/E9-1777.pdf)).
 
@@ -533,39 +533,28 @@ The ALPHLIST tag contains list of agencies appearing in the Code of Federal Regu
 
 An abbreviated example of the ALPHLIST section and structure is below:
 
-&nbsp;
+ 
 
 ```<CFRDOC>
-
-&nbsp; .
-
-&nbsp; .
-
-&nbsp; .
-
-&nbsp; <ALPHLIST>  
- &nbsp; &nbsp;<HD SOURCE="HED">Alphabetical List of Agencies Appearing in the...</HD>  
- &nbsp; &nbsp;<REV>(Revised as of January 1, 2009)</REV>  
- &nbsp; &nbsp;<AGHD>Agency</AGHD>  
- &nbsp; &nbsp;<CFRHD>CFR Title, Subtitle or Chapter</CFRHD>  
- &nbsp; &nbsp;<AGENCY>Administrative Committee of the Federal Regulations</AGENCY>  
- &nbsp; &nbsp;<CFRID>1, I</CFRID>  
- &nbsp; &nbsp;<AGENCY>Advanced Research Projects Agency</AGENCY>  
- &nbsp; &nbsp;<CFRID>32, I</CFRID>
-
-&nbsp; &nbsp; .
-
-&nbsp; &nbsp; .
-
-&nbsp; &nbsp; .  
- &nbsp;</ALPHLIST>
-
-&nbsp; .
-
-&nbsp; .
-
-&nbsp; .
-
+  .
+  .
+  .
+  <ALPHLIST>  
+    <HD SOURCE="HED">Alphabetical List of Agencies Appearing in the...</HD>  
+    <REV>(Revised as of January 1, 2009)</REV>  
+    <AGHD>Agency</AGHD>  
+    <CFRHD>CFR Title, Subtitle or Chapter</CFRHD>  
+    <AGENCY>Administrative Committee of the Federal Regulations</AGENCY>  
+    <CFRID>1, I</CFRID>  
+    <AGENCY>Advanced Research Projects Agency</AGENCY>  
+    <CFRID>32, I</CFRID>
+    .
+    .
+    .  
+  </ALPHLIST>
+  .
+  .
+  .
 </CFRDOC>```
 
 &nbsp;
