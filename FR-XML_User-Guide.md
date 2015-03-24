@@ -32,49 +32,61 @@ The purpose of this document is to provide an overview of Federal Register XML f
  
 
 **Q. What is the data set available for the Federal Register in XML?**
+
 **A.** Federal Register files in XML have been converted and simplified from the SGML rendition used for the printed publication. The Federal Register is available in XML starting with the year 2000, when GPO began composing Federal Register material in SGML. OFR/GPO plan to convert the remaining electronic data set for the _Federal Register_ (1994-1999) at a future date.
 
  
 **Q.  Are bulk data downloads of XML files offered on FDsys via Data.gov part of the official version of the _Federal Register_?**
+
 **A.**  No, the XML-structured files offered for bulk download are not part of the official on-line format of the _Federal Register_. While GPO's XML files are based on the original source data submitted by Federal agencies, OFR markup, and GPO typesetting and composition markup in SGML, only the PDF and Text versions of _Federal Register_ content on GPO Access and FDsys have legal status as parts of the official online format of the _Federal Register_.  Additional development will be required before OFR/GPO can specify that XML files are a part of the official online edition of the _Federal Register_.  
  
 
 **Q.  Do OFR/GPO plan to include XML files as part of the official format of the Federal Register?**
+
 **A.**  Yes. The current set of XML-structured material (minus graphics) is not yet characterized as part of the official online _Federal Register_ format because the underlying data used to create a viewable rendition of the material must be thoroughly scrutinized and tested. The XML-structured files are derived from SGML-tagged data and printing codes, which may produce anomalies in display.  For example, complex tabular material in XML files may not display as correctly composed objects equivalent to the tables that appear in the Text and PDF files.  Tabular material that displays in an ambiguous or distorted manner could affect the substantive meaning of regulations and other documents.  
 Our goal is to clean up the XML data and develop associated style sheets to the point that the XML rendition can be characterized as a display format of the official online edition.  We are also developing the means to embed graphics in the files, so that an XML version may be deemed both official and complete.  The OFR will issue a _Federal Register Bulletin_ to alert users when the XML-structured files are ready to be included as part of the official online edition.  
 
 
 **Q.  What is the legal basis for making determinations about official status?**
+
 **A.**  The Federal Register Act established the Administrative Committee of the Federal Register (Administrative Committee or ACFR) as the regulatory body with authority to determine the format(s) of the official serial publication known as the _Federal Register _(44 U.S.C. Ch. 15). Under 1 CFR 5.10, the official formats approved by the ACFR include a paper edition, a microfiche edition, and an online edition.  OFR and GPO carry out ACFR regulations by developing appropriate means to display Federal Register material in the official formats.  
 
 
 **Q. When did the Federal Register first appear online?**
+
 **A.** The official online edition dates to 1994 when Congress authorized an online edition in Public Law 103-40 (the Government Printing Office Electronic Information Enhancement Act of 1993; codified at 44 U.S.C. 4101).  
 
 
 **Q.  Are Federal Register XML bulk download files digitally signed?**
+
 **A.** No, XML files available for download are not digitally signed.  They can be manipulated and enriched to operate in the various applications that users may devise. GPO is evaluating technology that could be used to digitally sign XML files for future official editions posted on FDsys.  Adding signed non-PDF files to FDsys would be an enhancement for FDsys users, but would not be used to restrict or adversely affect the XML bulk data downloads available to our customers.  
 
 
 **Q.  What does the term "digitally signed" mean?**
+
 **A**. Currently, GPO uses digital signature technology on PDF documents to add a visible Seal of Authenticity (a graphic of an eagle) to authenticated and certified documents. The technology allows GPO to secure data integrity, and provide users with assurance that the content is unchanged since it was disseminated by GPO. A signed and certified document also displays a blue ribbon icon to the left of the Seal of Authenticity and in the Signatures tab within Adobe Acrobat or Reader. When users print a document that has been signed and certified by GPO, the Seal of Authenticity will automatically print on the document, but the blue ribbon will not print.
 
 
 **Q. How reliable is the metadata and the underlying tagging in bulk data files?**
+
 **A.**  The document markup and metadata found within bulk data files are generally reliable and complete.  However, there are variations in this underlying data due to inconsistencies in the composition and typesetting process.  As a result, some data-mining applications and user aids may not produce 100 per cent accurate results.  
 
 
 **Q.  What is the legal status of Federal Register user aids?**
+
 **A.** Federal Register user aids, including, finding aids, indexes, search tools, metadata associations, and tagging schemes are not part of the legal text of the _Federal Register_.  These ancillary features help users explore and extract data, but the official legal text stands on its own.  No person should form absolute legal conclusions based on search results, finding aids, metadata associations, extractions of data, and the like.  Ultimately, only the official text of the _Federal Register_ may be relied upon as evidence in a court of law.  
 
 
-**Q.  What is the authenticity of Federal Register bulk data files after they have been downloaded to another site?  **
+**Q.  What is the authenticity of Federal Register bulk data files after they have been downloaded to another site?**
+
 **A.**   We cannot vouch for the authenticity of data that is not under OFR/GPO control. OFR and GPO are providing free access to Federal Register data via XML for display in various applications and mash-ups outside the FDsys domain.  The OFR/GPO partnership does not endorse third party applications, and does not evaluate how our original legal content is displayed on other sites.  Consumers should form their own conclusions as to whether the downloaded data can be relied upon within an application or mash-up.  An application may link to the official _Federal Register_ on FDsys to provide users with additional assurance.  
 
 **Q. Do OFR and GPO assert any control over downstream uses of bulk data?**
+
 **A.**  In general, there are no restrictions on re-use of information in Federal Register documents because U.S. Government works are not subject to copyright. OFR and GPO do not restrict downstream uses of Federal Register data, except that independent providers should be aware that only the OFR and GPO are entitled to represent that they are the providers of the official versions of the _Federal Register_ and related Federal Register publications.  
 
 **Q. How can re-publishers indicate the source of Federal Register data?**
+
 **A.** Re-publishers of Federal Register data may cite FDsys and OFR/GPO as the source of their data, and they are free to characterize the quality of data as it appears on their site. But private sector re-publishers are prohibited from using the seal of the National Archives and Records Administration (NARA) or stylized Federal Register logos identified in NARA regulations (36 CFR part 1200) on their products because that would unlawfully misrepresent the legal status of the material, and could falsely identify  private organizations as entities of the Federal Government.
 
 
