@@ -17,13 +17,13 @@ U.S. Government Publishing Office
 
 The U.S. Government Publishing Office (GPO) and the National Archives' Office of the Federal Register (OFR) partnership is offering bulk data downloads of Code of Federal Regulations (CFR) files to the general public via Data.gov and FDsys. This effort began when the President challenged Federal agencies to create a more open and transparent government, promote accountability, and provide information to citizens about what their Government is doing (see [74 FR 4685, January 26, 2009](http://www.gpo.gov/fdsys/pkg/FR-2009-01-26/pdf/E9-1777.pdf)).
 
-The [Public Printer's letter of March 9, 2009](http://www.gpo.gov/pdfs/news-media/letter\_030909.pdf) pledged to provide trusted information in whatever form is required to meet the President's objectives &nbsp;
+The [Public Printer's letter of March 9, 2009](http://www.gpo.gov/pdfs/news-media/letter\_030909.pdf) pledged to provide trusted information in whatever form is required to meet the President's objectives. &nbsp;
 
 In addition, the Office of the Federal Register coordinates with the Office of Science Technology Policy to ensure that the OFR/GPO partnership meets customer expectations. To follow through on our commitment, we are expanding and accelerating the development of FDsys to provide XML-structured content as rendered output. &nbsp;This will give users access to masses of data to reconfigure and redistribute as they wish to meet the specialized needs of their constituencies.
 
 ##1.1.Purpose
 
-The purpose of this document is to provide an overview of Code of Federal Regulations XML files and associated schema. The FDsys Bulk Data repository at http://www.gpo.gov/fdsys/bulkdata/](http://www.gpo.gov/fdsys/bulkdata/) contains the Code of Federal Regulations in XML from 2007 to the present and additional years will be added as they become available. Please see FDsys at [www.fdsys.gov](http://www.fdsys.gov/) for access to the Code of Federal Regulations in PDF and HTML formats. &nbsp;
+The purpose of this document is to provide an overview of Code of Federal Regulations XML files and associated schema. The FDsys Bulk Data repository at http://www.gpo.gov/fdsys/bulkdata/ contains the Code of Federal Regulations in XML from 2007 to the present and additional years will be added as they become available. Please see FDsys at [www.fdsys.gov](http://www.fdsys.gov/) for access to the Code of Federal Regulations in PDF and HTML formats. &nbsp;
 
 ##1.2.Legal Status & Authenticity of Code of Federal Regulations files via Data.gov
 

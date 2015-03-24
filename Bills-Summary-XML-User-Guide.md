@@ -175,7 +175,7 @@ The following conventions are used in this document:
   abbreviations that can be found in bill summaries are hr, hjres, hconres, 
   hres, s, sconres, sres, and sjres.
  
-  See [Section 1.1](1.1-Types-of-Bill-Summaries)  of this document for a description of each measure type. 
+  See Section 1.1 of this document for a description of each measure type. 
 
 - `@measure-number` 
 
@@ -194,7 +194,7 @@ The following conventions are used in this document:
   The measure type abbreviations that can be found in bill summaries are 
   hr, hjres, hconres, hres, s, sconres, sres, and sjres.
  
-  See [Section 1.1](1.1-Types-of-Bill-Summaries) of this document for a description of each measure type. 
+  See Section 1.1 of this document for a description of each measure type. 
 
 - `@originChamber` 
 

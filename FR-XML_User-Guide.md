@@ -6,7 +6,7 @@ Prepared by:Office of Programs, Strategy, and Technology
 
 Office of the Chief Technology Officer  
 U.S. Government Publishing Office
-&nbsp;
+ 
 
 ##Revision History
 
@@ -17,99 +17,92 @@ U.S. Government Publishing Office
 
 #1.Introduction
 
-The U.S. Government Printing Office (GPO) and the National Archives' Office of the Federal Register (OFR) partnership is offering bulk data downloads of Federal Register files to the general public via Data.gov and FDsys. &nbsp;This effort began when the President challenged Federal agencies to create a more open and transparent government, promote accountability, and provide information to citizens about what their Government is doing (see 74 FR 4685, January 26, 2009 at [http://www.gpo.gov/fdsys/pkg/FR-2009-01-26/pdf/E9-1777.pdf](http://www.gpo.gov/fdsys/pkg/FR-2009-01-26/pdf/E9-1777.pdf)). &nbsp;The Public Printer's letter of March 9, 2009 pledged to provide trusted information in whatever form is required to meet the President's objectives [http://www.gpo.gov/pdfs/news-media/letter\_030909.pdf](http://www.gpo.gov/pdfs/news-media/letter_030909.pdf). &nbsp;
+The U.S. Government Printing Office (GPO) and the National Archives' Office of the Federal Register (OFR) partnership is offering bulk data downloads of Federal Register files to the general public via Data.gov and FDsys.  This effort began when the President challenged Federal agencies to create a more open and transparent government, promote accountability, and provide information to citizens about what their Government is doing (see 74 FR 4685, January 26, 2009 at [http://www.gpo.gov/fdsys/pkg/FR-2009-01-26/pdf/E9-1777.pdf](http://www.gpo.gov/fdsys/pkg/FR-2009-01-26/pdf/E9-1777.pdf)).  The Public Printer's letter of March 9, 2009 pledged to provide trusted information in whatever form is required to meet the President's objectives [http://www.gpo.gov/pdfs/news-media/letter\_030909.pdf](http://www.gpo.gov/pdfs/news-media/letter_030909.pdf).  
 
-&nbsp;
+ 
 
-In addition, the Office of the Federal Register coordinates with the Office of Science Technology Policy to ensure that the OFR/GPO partnership meets customer expectations. &nbsp; To follow through on our commitment, we are expanding and accelerating the development of FDsys to provide XML-structured content as rendered output. &nbsp;This will give users access to masses of data to reconfigure and redistribute as they wish to meet the specialized needs of their constituencies. &nbsp;
+In addition, the Office of the Federal Register coordinates with the Office of Science Technology Policy to ensure that the OFR/GPO partnership meets customer expectations.   To follow through on our commitment, we are expanding and accelerating the development of FDsys to provide XML-structured content as rendered output.  This will give users access to masses of data to reconfigure and redistribute as they wish to meet the specialized needs of their constituencies.  
 
 ##1.1.Purpose
 
-The purpose of this document is to provide an overview of Federal Register XML files and associated schema. The FDsys Bulk Data repository at [http://www.gpo.gov/fdsys/bulkdata/](http://www.gpo.gov/fdsys/bulkdata/) contains the Federal Register in XML from 2000 to the present. Please see FDsys at [www.fdsys.gov](http://www.fdsys.gov/) for access to the Federal Register in PDF and HTML formats. &nbsp;
+The purpose of this document is to provide an overview of Federal Register XML files and associated schema. The FDsys Bulk Data repository at [http://www.gpo.gov/fdsys/bulkdata/](http://www.gpo.gov/fdsys/bulkdata/) contains the Federal Register in XML from 2000 to the present. Please see FDsys at [www.fdsys.gov](http://www.fdsys.gov/) for access to the Federal Register in PDF and HTML formats.  
 
 ##1.2.Legal Status & Authenticity of Federal Register files via Data.gov
 
-&nbsp;
+ 
 
 **Q. What is the data set available for the Federal Register in XML?**
 
-&nbsp;
+**A.** Federal Register files in XML have been converted and simplified from the SGML rendition used for the printed publication. The Federal Register is available in XML starting with the year 2000, when GPO began composing Federal Register material in SGML. OFR/GPO plan to convert the remaining electronic data set for the _Federal Register_ (1994-1999) at a future date.
 
-**A. &nbsp; &nbsp; &nbsp; &nbsp;** Federal Register files in XML have been converted and simplified from the SGML rendition used for the printed publication. The Federal Register is available in XML starting with the year 2000, when GPO began composing Federal Register material in SGML. OFR/GPO plan to convert the remaining electronic data set for the Federal Register (1994-1999) at a future date.
+ 
 
-&nbsp;
+**Q.  Are bulk data downloads of XML files offered on FDsys via Data.gov part of the official version of the _Federal Register_?**
 
-**Q. &nbsp;Are bulk data downloads of XML files offered on FDsys via Data.gov part of the official version of the _Federal Register_?**
+ 
 
-&nbsp;
+**A.**  No, the XML-structured files offered for bulk download are not part of the official on-line format of the _Federal Register_. While GPO's XML files are based on the original source data submitted by Federal agencies, OFR markup, and GPO typesetting and composition markup in SGML, only the PDF and Text versions of _Federal Register_ content on GPO Access and FDsys have legal status as parts of the official online format of the _Federal Register_.  Additional development will be required before OFR/GPO can specify that XML files are a part of the official online edition of the _Federal Register_.  
 
-**A.** &nbsp;No, the XML-structured files offered for bulk download are not part of the official on-line format of the _Federal Register_. While GPO's XML files are based on the original source data submitted by Federal agencies, OFR markup, and GPO typesetting and composition markup in SGML, only the PDF and Text versions of _Federal Register _content on GPO Access and FDsys have legal status as parts of the official online format of the _Federal Register_. &nbsp;Additional development will be required before OFR/GPO can specify that XML files are a part of the official online edition of the _Federal Register_. &nbsp;
+ 
 
-&nbsp;
+**Q.  Do OFR/GPO plan to include XML files as part of the official format of the Federal Register?**
 
-**Q. &nbsp;Do OFR/GPO plan to include XML files as part of the official format of the Federal Register?**
+ 
 
-&nbsp;
+**A.**  Yes. The current set of XML-structured material (minus graphics) is not yet characterized as part of the official online _Federal Register_ format because the underlying data used to create a viewable rendition of the material must be thoroughly scrutinized and tested. The XML-structured files are derived from SGML-tagged data and printing codes, which may produce anomalies in display.  For example, complex tabular material in XML files may not display as correctly composed objects equivalent to the tables that appear in the Text and PDF files.  Tabular material that displays in an ambiguous or distorted manner could affect the substantive meaning of regulations and other documents.  
 
-**A.** &nbsp;Yes. The current set of XML-structured material (minus graphics) is not yet characterized as part of the official online _Federal Register _format because the underlying data used to create a viewable rendition of the material must be thoroughly scrutinized and tested. The XML-structured files are derived from SGML-tagged data and printing codes, which may produce anomalies in display. &nbsp;For example, complex tabular material in XML files may not display as correctly composed objects equivalent to the tables that appear in the Text and PDF files. &nbsp;Tabular material that displays in an ambiguous or distorted manner could affect the substantive meaning of regulations and other documents. &nbsp;
+ 
 
-&nbsp;
+Our goal is to clean up the XML data and develop associated style sheets to the point that the XML rendition can be characterized as a display format of the official online edition.  We are also developing the means to embed graphics in the files, so that an XML version may be deemed both official and complete.  The OFR will issue a _Federal Register Bulletin_ to alert users when the XML-structured files are ready to be included as part of the official online edition.  
 
-Our goal is to clean up the XML data and develop associated style sheets to the point that the XML rendition can be characterized as a display format of the official online edition. &nbsp;We are also developing the means to embed graphics in the files, so that an XML version may be deemed both official and complete. &nbsp;The OFR will issue a _Federal Register Bulletin_ to alert users when the XML-structured files are ready to be included as part of the official online edition. &nbsp;
+**Q.  What is the legal basis for making determinations about official status?**
 
-**Q. &nbsp;What is the legal basis for making determinations about official status?**
+**A.**  The Federal Register Act established the Administrative Committee of the Federal Register (Administrative Committee or ACFR) as the regulatory body with authority to determine the format(s) of the official serial publication known as the _Federal Register _(44 U.S.C. Ch. 15). Under 1 CFR 5.10, the official formats approved by the ACFR include a paper edition, a microfiche edition, and an online edition.  OFR and GPO carry out ACFR regulations by developing appropriate means to display Federal Register material in the official formats.  
 
-**A.** &nbsp;The Federal Register Act established the Administrative Committee of the Federal Register (Administrative Committee or ACFR) as the regulatory body with authority to determine the format(s) of the official serial publication known as the _Federal Register _(44 U.S.C. Ch. 15). Under 1 CFR 5.10, the official formats approved by the ACFR include a paper edition, a microfiche edition, and an online edition. &nbsp;OFR and GPO carry out ACFR regulations by developing appropriate means to display Federal Register material in the official formats. &nbsp;
-
-&nbsp;
+ 
 
 Q. When did the Federal Register first appear online?
 
-&nbsp;
+**A.** The official online edition dates to 1994 when Congress authorized an online edition in Public Law 103-40 (the Government Printing Office Electronic Information Enhancement Act of 1993; codified at 44 U.S.C. 4101).  
 
-**A.** The official online edition dates to 1994 when Congress authorized an online edition in Public Law 103-40 (the Government Printing Office Electronic Information Enhancement Act of 1993; codified at 44 U.S.C. 4101). &nbsp;
+ 
 
-&nbsp;
+Q.  Are Federal Register XML bulk download files digitally signed?
 
-Q. &nbsp;Are Federal Register XML bulk download files digitally signed?
+**A.** No, XML files available for download are not digitally signed.  They can be manipulated and enriched to operate in the various applications that users may devise. GPO is evaluating technology that could be used to digitally sign XML files for future official editions posted on FDsys.  Adding signed non-PDF files to FDsys would be an enhancement for FDsys users, but would not be used to restrict or adversely affect the XML bulk data downloads available to our customers.  
 
-No, XML files available for download are not digitally signed. &nbsp;They can be manipulated and enriched to operate in the various applications that users may devise. GPO is evaluating technology that could be used to digitally sign XML files for future official editions posted on FDsys. &nbsp;Adding signed non-PDF files to FDsys would be an enhancement for FDsys users, but would not be used to restrict or adversely affect the XML bulk data downloads available to our customers. &nbsp;
-
-**Q. &nbsp;What does the term "digitally signed" mean?**
-
-&nbsp;
+**Q.  What does the term "digitally signed" mean?**
 
 **A**. Currently, GPO uses digital signature technology on PDF documents to add a visible Seal of Authenticity (a graphic of an eagle) to authenticated and certified documents. The technology allows GPO to secure data integrity, and provide users with assurance that the content is unchanged since it was disseminated by GPO. A signed and certified document also displays a blue ribbon icon to the left of the Seal of Authenticity and in the Signatures tab within Adobe Acrobat or Reader. When users print a document that has been signed and certified by GPO, the Seal of Authenticity will automatically print on the document, but the blue ribbon will not print.
 
 **Q. How reliable is the metadata and the underlying tagging in bulk data files?**
 
-**A.** &nbsp;The document markup and metadata found within bulk data files are generally reliable and complete. &nbsp;However, there are variations in this underlying data due to inconsistencies in the composition and typesetting process. &nbsp;As a result, some data-mining applications and user aids may not produce 100 per cent accurate results. &nbsp;
+**A.**  The document markup and metadata found within bulk data files are generally reliable and complete.  However, there are variations in this underlying data due to inconsistencies in the composition and typesetting process.  As a result, some data-mining applications and user aids may not produce 100 per cent accurate results.  
 
-Q. &nbsp;What is the legal status of Federal Register user aids?
+Q.  What is the legal status of Federal Register user aids?
 
-**A.:** Federal Register user aids, including, finding aids, indexes, search tools, metadata associations, and tagging schemes are not part of the legal text of the _Federal Register_. &nbsp;These ancillary features help users explore and extract data, but the official legal text stands on its own. &nbsp;No person should form absolute legal conclusions based on search results, finding aids, metadata associations, extractions of data, and the like. &nbsp;Ultimately, only the official text of the _Federal Register_ may be relied upon as evidence in a court of law. &nbsp;
+**A.** Federal Register user aids, including, finding aids, indexes, search tools, metadata associations, and tagging schemes are not part of the legal text of the _Federal Register_.  These ancillary features help users explore and extract data, but the official legal text stands on its own.  No person should form absolute legal conclusions based on search results, finding aids, metadata associations, extractions of data, and the like.  Ultimately, only the official text of the _Federal Register_ may be relied upon as evidence in a court of law.  
 
-**Q. &nbsp;What is the authenticity of Federal Register bulk data files after they have been downloaded to another site? &nbsp;**
+**Q.  What is the authenticity of Federal Register bulk data files after they have been downloaded to another site?  **
 
-**A.** &nbsp; We cannot vouch for the authenticity of data that is not under OFR/GPO control. OFR and GPO are providing free access to Federal Register data via XML for display in various applications and mash-ups outside the FDsys domain. &nbsp;The OFR/GPO partnership does not endorse third party applications, and does not evaluate how our original legal content is displayed on other sites. &nbsp;Consumers should form their own conclusions as to whether the downloaded data can be relied upon within an application or mash-up. &nbsp;An application may link to the official _Federal Register_ on FDsys to provide users with additional assurance. &nbsp;
+**A.**   We cannot vouch for the authenticity of data that is not under OFR/GPO control. OFR and GPO are providing free access to Federal Register data via XML for display in various applications and mash-ups outside the FDsys domain.  The OFR/GPO partnership does not endorse third party applications, and does not evaluate how our original legal content is displayed on other sites.  Consumers should form their own conclusions as to whether the downloaded data can be relied upon within an application or mash-up.  An application may link to the official _Federal Register_ on FDsys to provide users with additional assurance.  
 
 **Q. Do OFR and GPO assert any control over downstream uses of bulk data?**
 
-**A.** &nbsp;In general, there are no restrictions on re-use of information in Federal Register documents because U.S. Government works are not subject to copyright. OFR and GPO do not restrict downstream uses of Federal Register data, except that independent providers should be aware that only the OFR and GPO are entitled to represent that they are the providers of the official versions of the _Federal Register_ and related Federal Register publications. &nbsp;
+**A.**  In general, there are no restrictions on re-use of information in Federal Register documents because U.S. Government works are not subject to copyright. OFR and GPO do not restrict downstream uses of Federal Register data, except that independent providers should be aware that only the OFR and GPO are entitled to represent that they are the providers of the official versions of the _Federal Register_ and related Federal Register publications.  
 
-&nbsp;
 
 Q. How can re-publishers indicate the source of Federal Register data?
 
-**A**. Re-publishers of Federal Register data may cite FDsys and OFR/GPO as the source of their data, and they are free to characterize the quality of data as it appears on their site. But private sector re-publishers are prohibited from using the seal of the National Archives and Records Administration (NARA) or stylized Federal Register logos identified in NARA regulations (36 CFR part 1200) on their products because that would unlawfully misrepresent the legal status of the material, and could falsely identify &nbsp;private organizations as entities of the Federal Government.
+**A.** Re-publishers of Federal Register data may cite FDsys and OFR/GPO as the source of their data, and they are free to characterize the quality of data as it appears on their site. But private sector re-publishers are prohibited from using the seal of the National Archives and Records Administration (NARA) or stylized Federal Register logos identified in NARA regulations (36 CFR part 1200) on their products because that would unlawfully misrepresent the legal status of the material, and could falsely identify  private organizations as entities of the Federal Government.
 
 #2.Schema Description
 
 The schema chosen to represent the Federal Register is a simplified version of the SGML schema that is used as part of the print production process, with some presentation and print specific tags removed or collapsed, and then converted to well-formed XML. This schema was chosen for the following reasons:
 
-1. It is a complete and faithful representation of the Federal Register, which matches most closely to the author's original intent.&nbsp;
-2. It describes the data using semantic tags in a way that is appropriate to the Federal Register Domain. For example, <RULE>, <NOTICE>, and <AGENCY> are all tags in this schema.&nbsp;
-3. It fully describes the structure of the Federal Register, including the large structure (parts, articles, corrections, table of contents, etc.), the document structure (titles, paragraphs, sections, etc.), and semantic structure (CFR references, agency names, contact information, amendment text, etc.)&nbsp;
+1. It is a complete and faithful representation of the Federal Register, which matches most closely to the author's original intent. 
+2. It describes the data using semantic tags in a way that is appropriate to the Federal Register Domain. For example, <RULE>, <NOTICE>, and <AGENCY> are all tags in this schema. 
+3. It fully describes the structure of the Federal Register, including the large structure (parts, articles, corrections, table of contents, etc.), the document structure (titles, paragraphs, sections, etc.), and semantic structure (CFR references, agency names, contact information, amendment text, etc.) 
 
 Since the schema is not an authoring schema and the SGML to XML conversion process maintains the order of the tags, this allows the XML schema to be more permissive than if it were used for checking authored content.
 
@@ -117,7 +110,7 @@ The schema being produced for this effort describes the data as it actually occu
 
 The following table lists the SGML tags that were removed or collapsed into a source attribute in the Federal Register XML.
 
-&nbsp;
+ 
 
 | Purposed Fields to be Removed | Fields to be Removed or Collapsed | Description |
 | --- | --- | --- |
@@ -128,13 +121,13 @@ The following table lists the SGML tags that were removed or collapsed into a so
 | FNP | Removed | Force new page. |
 | Q | Removed | Inserts vertical spaces |
 | NPAR | Collapse to P | Used to generate a new paragraph where the <P> tag would create a run in entry. |
-| P | Collapse to P | Normally used for paragraph. &nbsp;A paragraph here has the first line indented. |
+| P | Collapse to P | Normally used for paragraph.  A paragraph here has the first line indented. |
 | P1 | Collapse to P | Paragraph, indented one em on left. |
 | P-1 | Collapse to P | Paragraph, turnovers indented one extra em on left. |
 | P1-3 | Collapse to P | Paragraph, indented one em on left, turnovers indented three ems on left. |
 | P2 | Collapse to P | Paragraph, indented two ems on left. |
-| P-2 | Collapse to P | Paragraph, turnovers indented two ems on left. &nbsp;Same as FP1-2, which should not be used. |
-| P2-4 | Collapse to P | Paragraph, indented two ems on left, turnovers indented four &nbsp;ems on left. |
+| P-2 | Collapse to P | Paragraph, turnovers indented two ems on left.  Same as FP1-2, which should not be used. |
+| P2-4 | Collapse to P | Paragraph, indented two ems on left, turnovers indented four  ems on left. |
 | P-3 | Collapse to P | Paragraph, turnovers indented three ems on left. |
 | P-DASH | Collapse to P | Paragraph, the last line of which fills with low-line dashes |
 | OLNOTE1 | Collapse to OLNOTE1 | Sets footnote for first overlay note |
@@ -146,7 +139,7 @@ The following table lists the SGML tags that were removed or collapsed into a so
 | FP | Collapse to FP | Flush paragraph |
 | FP1 | Collapse to FP | Flush paragraph, all lines indented one em. |
 | FP-1 | Collapse to FP | Flush paragraph, turnovers indented one em |
-| FP1-2 | Collapse to FP | Paragraph, first line indented one em and turnovers indented &nbsp;two ems |
+| FP1-2 | Collapse to FP | Paragraph, first line indented one em and turnovers indented  two ems |
 | FP2 | Collapse to FP | Flush paragraph, all lines indented two ems |
 | FP-2 | Collapse to FP | Flush paragraph, turnovers indented two ems |
 | FP2-2 | Collapse to FP | Flush paragraph, all lines indented two ems. |
@@ -163,33 +156,33 @@ The following table lists the SGML tags that were removed or collapsed into a so
 | HD5 | Collapse to HD | Fifth level head in the following sections. |
 | HD6 | Collapse to HD | Sixth level head in the following sections. |
 | HD8 | Collapse to HD | Lowest level head in the following sections. |
-| HED | Collapse to HD | The first head in the following sections. &nbsp; |
+| HED | Collapse to HD | The first head in the following sections.   |
 | HED1 | Collapse to HD | Special first level head in text of Section. |
-| THED &nbsp; &nbsp; &nbsp; | Collapse to HD | Head that turns sideways on the page. |
-| TSECT | Collapse to HD | Section head that turns sideways on the page. &nbsp; |
+| THED       | Collapse to HD | Head that turns sideways on the page. |
+| TSECT | Collapse to HD | Section head that turns sideways on the page.   |
 | FNC | Removed | Used to generate a new column |
 
 ##2.1.Sections Available in XML
 
 The following are currently available in Federal Register XML:
 
-- .Contents&nbsp;
-- .Rules and Regulations&nbsp;
-- .Proposed Rules&nbsp;
-- .Notices&nbsp;
-- .Corrections&nbsp;
+- .Contents 
+- .Rules and Regulations 
+- .Proposed Rules 
+- .Notices 
+- .Corrections 
 
-&nbsp;
+ 
 
 The following are not currently available in Federal Register XML:
 
-- .Front Matter (e.g. cover page)&nbsp;
-- .CFR Parts Affected&nbsp;
-- .Reader Aids&nbsp;
-- .CFR Checklist&nbsp;
-- .CFR Issuances&nbsp;
-- .Table of Effective Dates&nbsp;
-- .Graphics&nbsp;
+- .Front Matter (e.g. cover page) 
+- .CFR Parts Affected 
+- .Reader Aids 
+- .CFR Checklist 
+- .CFR Issuances 
+- .Table of Effective Dates 
+- .Graphics 
 
 ##2.2.Sections, Parts, and Articles
 
@@ -197,15 +190,15 @@ This section describes the top-level structure of a Federal Register XML file.
 
 The XML schema, being a translated reproduction of the SGML schema, contains tags and content in the same order as they appear in the printed document. Major sections are grouped appropriately (<CNTNTS>, <RULES>, <PRORULES>, <NOTICES>, <NEWPART>, <CORRECT>), and all data and tags are represented – with the exception of the reduced tags from the previous section.
 
-&nbsp;
+ 
 
 The XML tags and their descriptions of the schema above are shown below:
 
-&nbsp;
+ 
 
 | XML Tag | Description |
 | --- | --- |
-| FEDREG | The root tag for all document types in Federal Register publications. &nbsp;This tag includes children such as CNTNTS, RULES, PRORULES, NOTICES, NEWPART. &nbsp; |
+| FEDREG | The root tag for all document types in Federal Register publications.  This tag includes children such as CNTNTS, RULES, PRORULES, NOTICES, NEWPART.   |
 | VOL | Contains the volume number for the publication. |
 | NO | Contains the issue number of the volume. |
 | UNITNAME | Contains the display name of the unit which follows, for example, "Notices", "Proposed Rules", "Rules", and "Presidential Documents". |
@@ -217,9 +210,9 @@ The XML tags and their descriptions of the schema above are shown below:
 | NOTICES | Starts Notices section of the Federal Register. Should contain at least one <NOTICE>. |
 | NOTICE | Start individual Notice within Notices section. |
 
-&nbsp;
+ 
 
-&nbsp;
+ 
 
 An abbreviated example of the overall section and structure is below:
 
@@ -269,27 +262,27 @@ An abbreviated example of the overall section and structure is below:
 
 The schema allows for a wide variety XPath commands for extracting items:
 
-&nbsp;//RULE &nbsp; &nbsp;Output all rules
+ //RULE    Output all rules
 
-&nbsp;(//PRTPAGE/@P)[0] &nbsp; &nbsp;Get the first page number
+ (//PRTPAGE/@P)[0]    Get the first page number
 
-&nbsp;(//PRTPAGE/@P)[last()] &nbsp; &nbsp;Get the last page number
+ (//PRTPAGE/@P)[last()]    Get the last page number
 
-&nbsp;//RULE[descendant::PRTPAGE/@P = '12627] &nbsp; &nbsp;Get rule which contains page 12627
+ //RULE[descendant::PRTPAGE/@P = '12627]    Get rule which contains page 12627
 
-&nbsp;//RULE[PREAMB/AGENCY = 'NUCLEAR REGULATORY COMMISSION']
+ //RULE[PREAMB/AGENCY = 'NUCLEAR REGULATORY COMMISSION']
 
-&nbsp;&nbsp; &nbsp;Get all rules for the nuclear regulatory commission
+    Get all rules for the nuclear regulatory commission
 
-&nbsp;
+ 
 
 ##2.3.NEW PART Section 
 
-The NEWPART section holds the contents of a part which often includes a part title and a list of notices, presidential documents, proposed rules, rules, and section names. A part number will always accompany the part title. In some cases, the specified rule will contain a preamble which can contain everything up to, but not including, the supplementary information. &nbsp;
+The NEWPART section holds the contents of a part which often includes a part title and a list of notices, presidential documents, proposed rules, rules, and section names. A part number will always accompany the part title. In some cases, the specified rule will contain a preamble which can contain everything up to, but not including, the supplementary information.  
 
 The XML tags and their descriptions of the schema above are shown below:
 
-&nbsp;
+ 
 
 | XML Tag | Description |
 | --- | --- |
@@ -298,11 +291,11 @@ The XML tags and their descriptions of the schema above are shown below:
 | PARTNO | Sets the part number on title page of new part within volume. |
 | PTITLE | Part title for new part within volume. |
 
-&nbsp;
+ 
 
 An abbreviated example of the NEWPART section and structure is below:
 
-&nbsp;
+ 
 ```
 <FEDREG>
    .
@@ -328,7 +321,7 @@ An abbreviated example of the NEWPART section and structure is below:
 
 The contents of article tags are the ones that usually describe the majority of the data in the Federal Register. For example, XML tags such as HD and P are often used to start the head sentence in the following section while P tag is used to describe the rest of the text. The flush paragraph or FP is used to denote either large or small text depending on where it is being used. In addition, the majority of the sections are also following by Federal Register doc number as well as an agency billing code.
 
-&nbsp;
+ 
 
 | XML Tag | Description |
 | --- | --- |
@@ -340,7 +333,7 @@ The contents of article tags are the ones that usually describe the majority of 
 | BILCOD | Agency billing code number. |
 | EDNOTE | Used for editorial notes. |
 
-&nbsp;
+ 
 
 The contents will roughly have the same structure
 
@@ -385,7 +378,7 @@ The contents will roughly have the same structure
   .
 </FEDREG>
 ```
-&nbsp;
+ 
 
 ##2.5.PREAMBLE Tag
 
@@ -393,13 +386,13 @@ The PREAMBLE can hold contents that describe the current page of the document as
 
 The XML tags and their descriptions of the schema above are shown below:
 
-&nbsp;
+ 
 
 | XML Tag | Description |
 | --- | --- |
 | PREAMB | Used to start the preamble. The preamble contains everything up to but not including the supplementary information. |
 | PRTPAGE | Used to identify the page number in all documents in Federal Register |
-| AGENCY | Used to identify the agency name. &nbsp; |
+| AGENCY | Used to identify the agency name.   |
 | CFR | Used to identify Code of Federal Regulation citation. |
 | RIN | Used to identify regulatory information number. |
 | SUBJECT | Used for title of subject. |
@@ -411,11 +404,11 @@ The XML tags and their descriptions of the schema above are shown below:
 | LSTSUB | Used to start a list of subject section. |
 | REGTEXT | Used to designate regulatory information that will be inserted into the CFR. |
 
-&nbsp;
+ 
 
 An abbreviated example of the PREAMB section and structure is below:
 
-&nbsp;
+ 
 ```
 <RULE>
 
@@ -438,7 +431,7 @@ An abbreviated example of the PREAMB section and structure is below:
   <BILCOD>BILLING CODE 7590-01-P</BILCOD>
 </RULE>
 ```
-&nbsp;
+ 
 
 ##2.6.SUPLINF Tag
 
@@ -446,7 +439,7 @@ The SUPLINF tag holds supplementary information that describes Federal Register 
 
 The XML tags and their descriptions of the SUPLINF schema are shown below.
 
-&nbsp;
+ 
 
 | XML Tag | Description |
 | --- | --- |
@@ -454,11 +447,11 @@ The XML tags and their descriptions of the SUPLINF schema are shown below.
 | LSTSUB | Used to start a list of subject section. |
 | REGTEXT | Used to designate regulatory information that will be inserted into the CFR. |
 
-&nbsp;
+ 
 
 An abbreviated example of the SUPLINF section and structure is below:
 
-&nbsp;
+ 
 ```
 <RULE>
 ...
@@ -475,7 +468,7 @@ An abbreviated example of the SUPLINF section and structure is below:
 ...
 </RULE>
 ```
-&nbsp;
+ 
 
 ##2.7.Presidential Documents
 
@@ -483,7 +476,7 @@ The PRESDOCS tag must have one or more presidential documents which may include 
 
 The XML tags and their descriptions of the schema above are shown below:
 
-&nbsp;
+ 
 
 | Node | Description |
 | --- | --- |
@@ -499,11 +492,11 @@ The XML tags and their descriptions of the schema above are shown below:
 | TITLE3 | CFR Title for Presidential documents. |
 | PSIG | President associated with a Presidential document. |
 | PLACE | Place of issuance for a Presidential document. |
-| DATE | Date associated with the Presidential document. &nbsp; |
+| DATE | Date associated with the Presidential document.   |
 
 An abbreviated example of the PRESDOCS section and structure is below:
 
-&nbsp;
+ 
 ```
 <FEDREG>
 ...  
@@ -536,8 +529,8 @@ An abbreviated example of the PRESDOCS section and structure is below:
 ...
 </FEDREG>
 ```
-&nbsp;
+ 
 
 #3.Resources Directory
 
-The resources directory in the Federal Register bulk data repository at [http://www.gpo.gov/fdsys/bulkdata/FR/resources](http://www.gpo.gov/fdsys/bulkdata/FR/resources) contains the current version of the XML schema, the XML stylesheet used to display the XML files in a browser on the FDsys website, and this user guide in PDF.
+The resources directory in the _Federal Register_ bulk data repository at [http://www.gpo.gov/fdsys/bulkdata/FR/resources](http://www.gpo.gov/fdsys/bulkdata/FR/resources) contains the current version of the XML schema, the XML stylesheet used to display the XML files in a browser on the FDsys website, and this user guide in PDF.
