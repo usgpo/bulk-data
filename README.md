@@ -1,3 +1,8 @@
+>As of November 16th, 2016, FDsys and **govinfo** will deprecate support for TLS 1.0 connections. Please ensure that crawlers are using modern protocols, including TLS 1.1 or 1.2. 
+
+>This is being done to mitigate vulnerabilities associated with TLS 1.0 and follow NIST guidelines
+
+
 # bulk-data
 
 GPO provides the capability to download XML in bulk for select collections from the [FDsys Bulk Data Repository] (http://www.gpo.gov/fdsys/bulkdata/). 
