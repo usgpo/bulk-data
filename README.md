@@ -4,7 +4,7 @@
 
 # bulk-data
 
-GPO provides the capability to download XML in bulk for select collections from the [FDsys Bulk Data Repository] (http://www.gpo.gov/fdsys/bulkdata/). 
+GPO provides the capability to download XML in bulk for select collections from the [FDsys Bulk Data Repository] (http://www.gpo.gov/fdsys/bulkdata/)
 
 Please see the User Guides within this repository for more information on how to make use of the XML data for the available collections.
  
