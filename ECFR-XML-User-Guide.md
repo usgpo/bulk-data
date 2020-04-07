@@ -1,8 +1,8 @@
 
 
-#Federal Digital System (FDsys) User Guide
+# Federal Digital System (FDsys) User Guide
 
-##Electronic Code of Federal Regulations (e-CFR) XML User Guide
+## Electronic Code of Federal Regulations (e-CFR) XML User Guide
 
 Prepared by: Office of Programs, Strategy, and Technology
 
@@ -10,12 +10,12 @@ Office of the Chief Technology Officer
 U.S. Government Publishing Office
  
 
-##Revision History
+## Revision History
 
 - 1.0 August 2015
   Initial publication
 
-##Table of Contents
+## Table of Contents
 
 [1. Introduction](#1.-Introduction)
 [2. XML Version Description](#2.-XML-Version-Description)
@@ -36,7 +36,7 @@ The purpose of this document is to provide an overview of e-CFR XML files and as
 
 **Q. What is the data set available for the e-CFR in XML?**
 
-**A.        ** E–CFR files in XML have been converted and simplified from data in SGML that originates at the OFR.  The E–CFR is available in XML starting with the year 2015. Only the most recent e-CFR data will be available at endpoints on the FDsys Bulk Data Repository. Please see [www.ecfr.gov](http://www.ecfr.gov/) to search and browse a point in time edition of the e-CFR.
+**A.        ** Eâ€“CFR files in XML have been converted and simplified from data in SGML that originates at the OFR.  The Eâ€“CFR is available in XML starting with the year 2015. Only the most recent e-CFR data will be available at endpoints on the FDsys Bulk Data Repository. Please see [www.ecfr.gov](http://www.ecfr.gov/) to search and browse a point in time edition of the e-CFR.
 
 **Q.  Are e-CFR XML files offered on the FDsys Bulk Data Repository part of the official version of the CFR?**
 
@@ -162,48 +162,48 @@ Now since the `<DIV#>` elements are nested within the parent sections that they 
 
 ```
 <DIV1 N="1" NODE="1:1" TYPE="TITLE">
-  …
+  â€¦
   <DIV3 N="I" NODE="1:1.0.1" TYPE="CHAPTER">
-    …
+    â€¦
     <DIV4 N="A" NODE="1:1.0.1.1" TYPE="SUBCHAP">
-      …
+      â€¦
       <DIV5 N="1" NODE="1:1.0.1.1.1" TYPE="PART">
-        …
-        <DIV8 N="§ 1.1" NODE="1:1.0.1.1.1.0.1.1" TYPE="SECTION">
-          …
+        â€¦
+        <DIV8 N="Â§ 1.1" NODE="1:1.0.1.1.1.0.1.1" TYPE="SECTION">
+          â€¦
         </DIV8>
-        …
+        â€¦
       </DIV5>
       <DIV5 N="2" NODE="1:1.0.1.1.2" TYPE="PART">
-        …
-        <DIV8 N="§ 2.1" NODE="1:1.0.1.1.2.0.1.1" TYPE="SECTION">
-          …
+        â€¦
+        <DIV8 N="Â§ 2.1" NODE="1:1.0.1.1.2.0.1.1" TYPE="SECTION">
+          â€¦
         </DIV8>
-        <DIV8 N="§ 2.2" NODE="1:1.0.1.1.2.0.1.2" TYPE="SECTION">
-          …
+        <DIV8 N="Â§ 2.2" NODE="1:1.0.1.1.2.0.1.2" TYPE="SECTION">
+          â€¦
         </DIV8>
-        <DIV8 N="§ 2.3" NODE="1:1.0.1.1.2.0.1.3" TYPE="SECTION">
-          …
+        <DIV8 N="Â§ 2.3" NODE="1:1.0.1.1.2.0.1.3" TYPE="SECTION">
+          â€¦
         </DIV8>
-        …
+        â€¦
       </DIV5>
       <DIV5 N="3" NODE="1:1.0.1.1.3" TYPE="PART">
-        …
-        <DIV8 N="§ 3.1" NODE="1:1.0.1.1.3.0.1.1" TYPE="SECTION">
-          …
+        â€¦
+        <DIV8 N="Â§ 3.1" NODE="1:1.0.1.1.3.0.1.1" TYPE="SECTION">
+          â€¦
         </DIV8>
-        <DIV8 N="§ 3.2" NODE="1:1.0.1.1.3.0.1.2" TYPE="SECTION">
-          …
+        <DIV8 N="Â§ 3.2" NODE="1:1.0.1.1.3.0.1.2" TYPE="SECTION">
+          â€¦
         </DIV8>
-        <DIV8 N="§ 3.3" NODE="1:1.0.1.1.3.0.1.3" TYPE="SECTION">
-          …
+        <DIV8 N="Â§ 3.3" NODE="1:1.0.1.1.3.0.1.3" TYPE="SECTION">
+          â€¦
         </DIV8>
-        …
+        â€¦
       </DIV5>
-      …
+      â€¦
     </DIV4>
     <DIV4 N="B" NODE="1:1.0.1.2" TYPE="SUBCHAP">
-      …
+      â€¦
 ```
 
 Note that though there are `<DIV8>` elements, there are no `<DIV6>` or `<DIV7>` elements in the example above.  While the higher number DIV elements are always nested within lower number DIV elements, they are not required to be sequential.
@@ -213,7 +213,7 @@ The title of a section is almost always given by the `<HEAD>` element immediatel
 
 ```
 <DIV4 N="B" NODE="5:1.0.1.2" TYPE="SUBCHAP">
-<HEAD>SUBCHAPTER B—CIVIL SERVICE REGULATIONS</HEAD>
+<HEAD>SUBCHAPTER Bâ€”CIVIL SERVICE REGULATIONS</HEAD>
 ```
 
 Note that the `<DIV#>` elements are consistent in their meaning as shown below:
@@ -233,17 +233,17 @@ Note that the `<DIV#>` elements are consistent in their meaning as shown below:
 The `<P>` element and other elements that are closely related to it (examples: `<PSPACE>`, `<FP>`, `<P-1>`, etc.) are used extensively in the content sections to separate paragraphs.  While paragraphs are often itemized points in an enumerated list with nested sub-lists, the numbering scheme is hardcoded in the content and there is no nesting of elements to preserve indentation levels.  For example:
 
 ```
-<DIV8 N="§ 151.101" NODE="5:1.0.1.2.12.0.1.1" TYPE="SECTION">
-<HEAD>§ 151.101   Definitions.</HEAD>
+<DIV8 N="Â§ 151.101" NODE="5:1.0.1.2.12.0.1.1" TYPE="SECTION">
+<HEAD>Â§ 151.101   Definitions.</HEAD>
 <P>In this part: </P>
 <P>(a) <I>State</I> means a State or territory or possession of the United States. </P>
 <P>(b) <I>State or local agency</I> means:</P>
 <P>(1) The executive branch of a State, municipality, or other political subdivision of a State, or an agency or department thereof; or</P>
 <P>(2) The executive branch of the District of Columbia, or an agency or department thereof.</P>
 <P>(c) <I>Federal agency</I> means an executive agency or other agency of the United States, but does not include a member bank of the Federal Reserve System; </P>
-<P>(d) <I>State or local officer or employee</I> means an individual employed by a State or local agency whose principal employment is in connection with an activity which is financed in whole or in part by loans or grants made by the United States or a Federal agency but does not include—</P>
+<P>(d) <I>State or local officer or employee</I> means an individual employed by a State or local agency whose principal employment is in connection with an activity which is financed in whole or in part by loans or grants made by the United States or a Federal agency but does not includeâ€”</P>
 <P>(1) An individual who exercises no functions in connection with that activity.</P>
-<P>(2) An individual employed by an educational or research institution, establishment, agency, or system which is supported in whole or in part by—</P>
+<P>(2) An individual employed by an educational or research institution, establishment, agency, or system which is supported in whole or in part byâ€”</P>
 <P>(i) A State or political subdivision thereof;</P>
 <P>(ii) The District of Columbia; or</P>
 <P>(iii) A recognized religious, philanthropic, or cultural organization.
@@ -252,7 +252,7 @@ The `<P>` element and other elements that are closely related to it (examples: `
 <P>(f) <I>Election</I> includes a primary, special, and general election. </P>
 <P>(g) <I>Nonpartisan election</I> means an election at which none of the candidates is to be nominated or elected as representing a political party any of whose candidates for Presidential elector receives votes in the last preceding election at which Presidential electors were selected. </P>
 <P>(h) <I>Partisan</I> when used as an adjective refers to a political party. </P>
-<P>(i) <I>Elective office</I> means any office which is voted upon at an election as defined at § 151.101(f), above, but does not include political party office. </P>
+<P>(i) <I>Elective office</I> means any office which is voted upon at an election as defined at Â§ 151.101(f), above, but does not include political party office. </P>
 <CITA TYPE="N">[40 FR 42733, Sept. 16, 1975, as amended at 79 FR 25484, May 5, 2014]
 </CITA>
 </DIV8>
@@ -288,7 +288,7 @@ If an e-CFR Title has images, they will be in either GIF and/or PDF format.  The
 
 ```
 <DIV9 N="Appendix A" NODE="2:1.2.25.3.2.11.51.1.16" TYPE="APPENDIX">
-  <HEAD>Appendix A to Part 3485—Covered Transactions</HEAD>
+  <HEAD>Appendix A to Part 3485â€”Covered Transactions</HEAD>
   <img src="http://www.ecfr.gov/graphics/er28mr12.000.gif"/>
   <P/>
   <a href="http://www.ecfr.gov/graphics/pdfs/er28mr12.000.pdf">View or download PDF</a>
@@ -343,15 +343,15 @@ The accent function places certain diacritical marks at letters. The `<AC>` tag 
 |Digit|Character|
 |-----|--|
 |0|&#124;|
-|1|é|
-|2|	è|
-|3|	ê|
-|4|ë|
+|1|Ã©|
+|2|	Ã¨|
+|3|	Ãª|
+|4|Ã«|
 |5|&#9633;|		
-|6|	ñ
-|7|	å|
+|6|	Ã±
+|7|	Ã¥|
 |8|	~|
-|9|	ç|
+|9|	Ã§|
 
 
 These can be used for any letters. Entities (e.g., &eacute;) can accomplish the same effects and are preferable, because they are more intelligible.
@@ -366,7 +366,7 @@ and x<E T="52">i</E> is the i<E T="51">th</E> sample; Or,</FP>
 This is an alphabet separator heading in agency indexes, i.e. the `<SUBCHIND>` element. [T, B]
 
 ```
-<HED>INDEX I—RULES RELATING TO PATENTS</HED>
+<HED>INDEX Iâ€”RULES RELATING TO PATENTS</HED>
 <EDNOTE>
 <HED>Editorial Note:</HED><PSPACE>This listing is provided for informational purposes only. It is compiled and kept current by the Department of Commerce. This index is updated as of July 1, 2012.</PSPACE></EDNOTE>
 <SECHD>Section</SECHD>
@@ -395,24 +395,24 @@ This indicates an appendix, exhibit or supplement heading as contents entry. [C,
 <CFRTOC>
   <EDNOTE>
     <HED>Editorial Note:</HED>
-    <PSPACE>Title 5 of the United States Code was revised and enacted into positive law by Pub. L. 89–554, Sept. 6, 1966. New citations for obsolete references to sections of 5 U.S.C. appearing in this volume may be found in a redesignation table under Title 5, Government Organization and Employees, United States Code.</PSPACE>
+    <PSPACE>Title 5 of the United States Code was revised and enacted into positive law by Pub. L. 89â€“554, Sept. 6, 1966. New citations for obsolete references to sections of 5 U.S.C. appearing in this volume may be found in a redesignation table under Title 5, Government Organization and Employees, United States Code.</PSPACE>
   </EDNOTE>
   <PTHD>Part</PTHD>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter ii</E>—Merit Systems Protection Board</SUBJECT>
+    <SUBJECT><E T="04">chapter ii</E>â€”Merit Systems Protection Board</SUBJECT>
     <PG>1200</PG>
-    <SUBJECT><E T="04">chapter iii</E>—Office of Management and Budget</SUBJECT>
+    <SUBJECT><E T="04">chapter iii</E>â€”Office of Management and Budget</SUBJECT>
     <PG>1300</PG>
-    …
+    â€¦
   </CHAPTI>
-  <APP>Appendix A to 5 CFR Chapter XIV—Current Addresses and Geographic Jurisdictions. </APP>
-  <APP>Appendix B to 5 CFR Chapter XIV—Memorandum Describing the Authority and Assigned Responsibilities of the General Counsel of the Federal Labor Relations Authority.</APP>
+  <APP>Appendix A to 5 CFR Chapter XIVâ€”Current Addresses and Geographic Jurisdictions. </APP>
+  <APP>Appendix B to 5 CFR Chapter XIVâ€”Memorandum Describing the Authority and Assigned Responsibilities of the General Counsel of the Federal Labor Relations Authority.</APP>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter xv</E>—Office of Administration, Executive Office of the President</SUBJECT>
+    <SUBJECT><E T="04">chapter xv</E>â€”Office of Administration, Executive Office of the President</SUBJECT>
     <PG>2500</PG>
-    <SUBJECT><E T="04">chapter xvi</E>—Office of Government Ethics</SUBJECT>
+    <SUBJECT><E T="04">chapter xvi</E>â€”Office of Government Ethics</SUBJECT>
     <PG>2600</PG>
-    …
+    â€¦
   </CHAPTI>
 </CFRTOC>
 ```
@@ -422,12 +422,12 @@ This indicates an appendix, exhibit or supplement heading as contents entry. [C,
 This is an OMB number approval note in parentheses. [T]
 
 ```
-<DIV8 N="§ 1305.3" NODE="5:3.0.2.2.5.0.48.3" TYPE="SECTION">
-  <HEAD>§ 1305.3   Procedures in the event of a demand for disclosure.</HEAD>
+<DIV8 N="Â§ 1305.3" NODE="5:3.0.2.2.5.0.48.3" TYPE="SECTION">
+  <HEAD>Â§ 1305.3   Procedures in the event of a demand for disclosure.</HEAD>
   <P>(a) Whenever a demand is made upon an employee or former employee of OMB ... </P>
   <P>(b) If information or material is sought by a demand in any case or ... </P>
   <P>(c) If response to a demand is required before instructions from the ... </P>
-  <APPRO TYPE="N">(Approved by the Office of Management and Budget under control number 0348–0056)</APPRO>
+  <APPRO TYPE="N">(Approved by the Office of Management and Budget under control number 0348â€“0056)</APPRO>
 </DIV8>
 ```
 
@@ -437,7 +437,7 @@ This is an authority statement that usually contains a mini-header.  Almost ever
 
 ```
 <DIV5 N="1" NODE="37:1.0.1.1.1" TYPE="PART">
-<HEAD>PART 1—RULES OF PRACTICE IN PATENT CASES</HEAD>
+<HEAD>PART 1â€”RULES OF PRACTICE IN PATENT CASES</HEAD>
 <AUTH>
   <HED>Authority:</HED>
   <PSPACE>35 U.S.C. 2(b)(2), unless otherwise noted.</PSPACE>
@@ -475,7 +475,7 @@ This is a bottom caption for a graphic or mathpac insert. [T]
 
 ```
 <img src="http://www.ecfr.gov/graphics/ec27oc91.004.gif"/>
-<BCAP><E T="15">Figure D-4—Ladder Far from Wall</E></BCAP>
+<BCAP><E T="15">Figure D-4â€”Ladder Far from Wall</E></BCAP>
 ```
 
 ## 3.12. BODY
@@ -498,15 +498,15 @@ The `<br>` tag inserts a single line break.
 
 
 ```
-<br/>—Department of the Environment.
-<br/>—Department of General Services.
-<br/>—Department of Housing and Community Development.
-<br/>—Department of Human Resources.
-<br/>—Department of Licensing and Regulation.
-<br/>—Department of Natural Resources.
-<br/>—Department of Public Safety and Correctional Services.
-<br/>—Department of Personnel.
-<br/>—Department of Transportation.
+<br/>â€”Department of the Environment.
+<br/>â€”Department of General Services.
+<br/>â€”Department of Housing and Community Development.
+<br/>â€”Department of Human Resources.
+<br/>â€”Department of Licensing and Regulation.
+<br/>â€”Department of Natural Resources.
+<br/>â€”Department of Public Safety and Correctional Services.
+<br/>â€”Department of Personnel.
+<br/>â€”Department of Transportation.
 ```
 
 ## 3.15. CFRTOC
@@ -517,23 +517,23 @@ A table of contents is given within this element.  It is only ever seen inside a
 <CFRTOC>
   <PTHD>Part</PTHD>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter i</E>—United States Patent and Trademark Office, Department of Commerce</SUBJECT>
+    <SUBJECT><E T="04">chapter i</E>â€”United States Patent and Trademark Office, Department of Commerce</SUBJECT>
     <PG>1</PG>
   </CHAPTI>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter ii</E>—U.S. Copyright Office, Library of Congress</SUBJECT>
+    <SUBJECT><E T="04">chapter ii</E>â€”U.S. Copyright Office, Library of Congress</SUBJECT>
     <PG>201</PG>
   </CHAPTI>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter iii</E>—Copyright Royalty Board, Library of Congress</SUBJECT>
+    <SUBJECT><E T="04">chapter iii</E>â€”Copyright Royalty Board, Library of Congress</SUBJECT>
     <PG>301</PG>
   </CHAPTI>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter iv</E>—Assistant Secretary for Technology Policy, Department of Commerce</SUBJECT>
+    <SUBJECT><E T="04">chapter iv</E>â€”Assistant Secretary for Technology Policy, Department of Commerce</SUBJECT>
     <PG>401</PG>
   </CHAPTI>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter v</E>—Under Secretary for Technology, Department of Commerce</SUBJECT>
+    <SUBJECT><E T="04">chapter v</E>â€”Under Secretary for Technology, Department of Commerce</SUBJECT>
     <PG>501</PG>
   </CHAPTI>
 </CFRTOC>
@@ -545,7 +545,7 @@ This is a chapter number and has special use in table of contents and a few othe
 
 ```
 <DIV2 N="Subtitle E" NODE="41:4.1" TYPE="SUBTITLE">
-  <HEAD>Subtitle E—Federal Information Resources Management Regulations System</HEAD>
+  <HEAD>Subtitle Eâ€”Federal Information Resources Management Regulations System</HEAD>
   <CHAPNO>CHAPTER 201 [RESERVED]</CHAPNO>
 </DIV2>
 ```
@@ -558,23 +558,23 @@ This element has special use in table of contents, i.e. `<CFRTOC>`.  It is a sin
 <CFRTOC>
   <PTHD>Part</PTHD>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter i</E>—United States Patent and Trademark Office, Department of Commerce</SUBJECT>
+    <SUBJECT><E T="04">chapter i</E>â€”United States Patent and Trademark Office, Department of Commerce</SUBJECT>
     <PG>1</PG>
   </CHAPTI>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter ii</E>—U.S. Copyright Office, Library of Congress</SUBJECT>
+    <SUBJECT><E T="04">chapter ii</E>â€”U.S. Copyright Office, Library of Congress</SUBJECT>
     <PG>201</PG>
   </CHAPTI>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter iii</E>—Copyright Royalty Board, Library of Congress</SUBJECT>
+    <SUBJECT><E T="04">chapter iii</E>â€”Copyright Royalty Board, Library of Congress</SUBJECT>
     <PG>301</PG>
   </CHAPTI>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter iv</E>—Assistant Secretary for Technology Policy, Department of Commerce</SUBJECT>
+    <SUBJECT><E T="04">chapter iv</E>â€”Assistant Secretary for Technology Policy, Department of Commerce</SUBJECT>
     <PG>401</PG>
   </CHAPTI>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter v</E>—Under Secretary for Technology, Department of Commerce</SUBJECT>
+    <SUBJECT><E T="04">chapter v</E>â€”Under Secretary for Technology, Department of Commerce</SUBJECT>
     <PG>501</PG>
   </CHAPTI>
 </CFRTOC>
@@ -585,8 +585,8 @@ This element has special use in table of contents, i.e. `<CFRTOC>`.  It is a sin
 This is a source note at the section level. Alone, it marks a one-column citation.
 
 ```
-<DIV8 N="§ 1.3" NODE="37:1.0.1.1.1.1.66.3" TYPE="SECTION">
-  <HEAD>§ 1.3   Business to be conducted with decorum and courtesy.</HEAD>
+<DIV8 N="Â§ 1.3" NODE="37:1.0.1.1.1.1.66.3" TYPE="SECTION">
+  <HEAD>Â§ 1.3   Business to be conducted with decorum and courtesy.</HEAD>
   <P>Applicants and their attorneys or agents are required to conduct their business with the United States Patent and Trademark Office with decorum and courtesy. Papers presented in violation of this requirement will be submitted to the Director and will not be entered. A notice of the non-entry of the paper will be provided. Complaints against examiners and other employees must be made in correspondence separate from other papers.</P>
   <CITA TYPE="N">[68 FR 38624, June 30, 2003]</CITA>
 </DIV8>
@@ -598,7 +598,7 @@ This is a cross reference note.
 
 ```
 <DIV5 N="93" NODE="29:1.1.1.1.38" TYPE="PART">
-  <HEAD>PART 93—NEW RESTRICTIONS ON LOBBYING</HEAD>
+  <HEAD>PART 93â€”NEW RESTRICTIONS ON LOBBYING</HEAD>
   <AUTH>
     <HED>Authority:</HED>
     <PSPACE>Section 319, Public Law 101-121 (31 U.S.C. 1352); 5 U.S.C. 301, Reorganization Plan Number 6 of 1950.</PSPACE>
@@ -632,7 +632,7 @@ This is a division or section of a document that is grouped into a block, often 
 
 ```
 <DIV9 N="Appendix to" NODE="37:1.0.1.4.15.2.214.15.2" TYPE="APPENDIX">
-  <HEAD>Appendix to Part 102—Systems of Records Noticed by Other Federal Agencies
+  <HEAD>Appendix to Part 102â€”Systems of Records Noticed by Other Federal Agencies
 <SU>1</SU> and Applicable to USPTO Records and Applicability of This Part Thereto</HEAD>
   <DIV width="100%">
     <DIV class="gpotbl\_div">
@@ -691,14 +691,14 @@ This element denotes the first-level subdivision of the content body of the XML 
 <?xml version="1.0" ?>
 <DLPSTEXTCLASS>
   <HEADER>
-    …
+    â€¦
   </HEADER>
   <TEXT>
     <BODY>
       <ECFRBRWS>
         <AMDDATE>Mar. 31, 2014</AMDDATE>
           <DIV1 N="1" NODE="1:1" TYPE="TITLE">
-            …
+            â€¦
           </DIV1>
       </ECFRBRWS>
     </BODY>
@@ -721,7 +721,7 @@ This element denotes the third-level subdivision of the content body of the XML 
 
 ```
 <DIV3 N="I" NODE="5:1.0.1" TYPE="CHAPTER">
-<HEAD> CHAPTER I—OFFICE OF PERSONNEL MANAGEMENT</HEAD>
+<HEAD> CHAPTER Iâ€”OFFICE OF PERSONNEL MANAGEMENT</HEAD>
 ```
 
 ## 3.25. DIV4
@@ -730,7 +730,7 @@ This element denotes the fourth-level subdivision of the content body of the XML
 
 ```
 <DIV4 N="B" NODE="5:1.0.1.2" TYPE="SUBCHAP">
-<HEAD>SUBCHAPTER B—CIVIL SERVICE REGULATIONS </HEAD>
+<HEAD>SUBCHAPTER Bâ€”CIVIL SERVICE REGULATIONS </HEAD>
 ```
 
 ## 3.26. DIV5
@@ -739,7 +739,7 @@ This element denotes the fifth-level subdivision of the content body of the XML 
 
 ```
 <DIV5 N="9" NODE="5:1.0.1.1.9" TYPE="PART">
-<HEAD>PART 9—WORKFORCE INFORMATION (RULE IX)</HEAD>
+<HEAD>PART 9â€”WORKFORCE INFORMATION (RULE IX)</HEAD>
 ```
 
 ## 3.27. DIV6
@@ -748,7 +748,7 @@ This element denotes the sixth-level subdivision of the content body of the XML 
 
 ```
 <DIV6 N="C" NODE="5:1.0.1.2.16.3" TYPE="SUBPART">
-<HEAD>Subpart C—Administrative Offset</HEAD>
+<HEAD>Subpart Câ€”Administrative Offset</HEAD>
 ```
 
 ## 3.28. DIV7
@@ -765,8 +765,8 @@ This element denotes the seventh-level subdivision of the content body of the XM
 This element denotes the eighth-level subdivision of the content body of the XML document.  For e-CFR documents this element encapsulates the body of a Section. The value of the "N" attribute will be the number of the Section and the value of the "TYPE" attribute will be "SECTION". This element may only reside inside of a `<DIV#>` element where # is a number lower than "8".
 
 ```
-<DIV8 N="§ 177.110" NODE="5:1.0.1.2.14.0.4.10" TYPE="SECTION">
-<HEAD>§ 177.110   Action on approved claim.</HEAD>
+<DIV8 N="Â§ 177.110" NODE="5:1.0.1.2.14.0.4.10" TYPE="SECTION">
+<HEAD>Â§ 177.110   Action on approved claim.</HEAD>
 ```
 
 ## 3.30. DIV9
@@ -775,7 +775,7 @@ This element denotes the ninth-level subdivision of the content body of the XML 
 
 ```
 <DIV9 N="Appendix B" NODE="5:1.0.1.2.80.3.96.11.15" TYPE="APPENDIX">
-<HEAD>Appendix B to Subpart C of Part 591—Daily Inconvenience or Hardship Allowance Schedule, Commuting Over Land by Motor Vehicle to Remote Duty Posts</HEAD>
+<HEAD>Appendix B to Subpart C of Part 591â€”Daily Inconvenience or Hardship Allowance Schedule, Commuting Over Land by Motor Vehicle to Remote Duty Posts</HEAD>
 ```
 
 ## 3.31. DLPSTEXTCLASS
@@ -809,10 +809,10 @@ This element is used to denote emphasis (change face) where type attribute, "T",
 - `<E T='04'>`  cap & small cap (figures are small)
 - `<E T='05'>`  cap & small cap (figures are full) (this is the default for tags that supply c & sc emphasis, e.g., `<EDNOTE>`)
 
-When used with other Grid and Table numbers, certain characters will print superior or inferior (`<E T='51'>` or `<E T='52'>`) or a character or entity will appear as some other character (e.g., `<E T='61'>&plusmn;</E>` becomes a ±, though in this example the emphasis tag is no longer necessary).
+When used with other Grid and Table numbers, certain characters will print superior or inferior (`<E T='51'>` or `<E T='52'>`) or a character or entity will appear as some other character (e.g., `<E T='61'>&plusmn;</E>` becomes a Â±, though in this example the emphasis tag is no longer necessary).
 
 ```
-<SUBJECT><E T="04">chapter i</E>—Office of Personnel Management</SUBJECT>
+<SUBJECT><E T="04">chapter i</E>â€”Office of Personnel Management</SUBJECT>
 ```
 
 ## 3.34. ECFRBRWS
@@ -841,7 +841,7 @@ This is an effective date note. Alone it marks a one-column citation. The tag is
 
 ```
 <DIV5 N="502" NODE="29:3.1.1.1.3" TYPE="PART">
-  <HEAD>PART 502—ENFORCEMENT OF CONTRACTUAL OBLIGATIONS FOR TEMPORARY ALIEN AGRICULTURAL WORKERS ADMITTED UNDER SECTION 218 OF THE IMMIGRATION AND NATIONALITY ACT (SUSPENDED 6-29-2009)</HEAD>
+  <HEAD>PART 502â€”ENFORCEMENT OF CONTRACTUAL OBLIGATIONS FOR TEMPORARY ALIEN AGRICULTURAL WORKERS ADMITTED UNDER SECTION 218 OF THE IMMIGRATION AND NATIONALITY ACT (SUSPENDED 6-29-2009)</HEAD>
   <AUTH>
     <HED>Authority:</HED>
     <PSPACE>8 U.S.C. 1101(a)(15)(H)(ii)(a), 1184(c), and 1188. </PSPACE>
@@ -882,7 +882,7 @@ This is a footnote within and appendix or extract that stays in place rather tha
 This element denotes that the enclosed text is emphasized.
 
 ```
-<P>Identify the highest applicable rate range for the employee's grade after promotion based on consideration of any pay schedule that applied to the employee's position of record <em>before</em> promotion (after any geographic conversion). (Do not consider pay schedules that apply only to the employee's new position of record after… </P>
+<P>Identify the highest applicable rate range for the employee's grade after promotion based on consideration of any pay schedule that applied to the employee's position of record <em>before</em> promotion (after any geographic conversion). (Do not consider pay schedules that apply only to the employee's new position of record afterâ€¦ </P>
 ```
 
 ## 3.39. EXAMPLE
@@ -897,7 +897,7 @@ This element denotes an example to be introduced by the text in the `<HED>` elem
 </EXAMPLE>
 <EXAMPLE>
   <HED>Example 2:</HED>
-  <PSPACE>A noncareer member of the Senior Executive Service, or other employee covered under this subpart, may serve as a vice-president of a political action committee, as long as the duties of the office do not involve personal solicitation, acceptance, or receipt of political contributions. Ministerial activities which precede or follow the official acceptance and receipt, such as handling, disbursing, or accounting for contributions are not covered under the definitions of <I>accept</I> and <I>receive</I> in § 734.101. Sections 734.208 and 734.303 describe in detail permitted and prohibited activities which are related to fundraising.</PSPACE>
+  <PSPACE>A noncareer member of the Senior Executive Service, or other employee covered under this subpart, may serve as a vice-president of a political action committee, as long as the duties of the office do not involve personal solicitation, acceptance, or receipt of political contributions. Ministerial activities which precede or follow the official acceptance and receipt, such as handling, disbursing, or accounting for contributions are not covered under the definitions of <I>accept</I> and <I>receive</I> in Â§ 734.101. Sections 734.208 and 734.303 describe in detail permitted and prohibited activities which are related to fundraising.</PSPACE>
 </EXAMPLE>
 ```
 
@@ -926,8 +926,8 @@ This element contains a left column item in leaderwork text, i.e. `<LDRWK>`. [T]
 
 
 ```
-<DIV8 N="§ 2.6" NODE="37:1.0.1.2.5.0.142.3" TYPE="SECTION">
-  <HEAD>§ 2.6   Trademark fees.</HEAD>
+<DIV8 N="Â§ 2.6" NODE="37:1.0.1.2.5.0.142.3" TYPE="SECTION">
+  <HEAD>Â§ 2.6   Trademark fees.</HEAD>
   <P>The Patent and Trademark Office requires the following fees and charges:</P>
   <P>(a) Trademark process fees.</P>
   <LDRWK>
@@ -971,7 +971,7 @@ This indicates a flush paragraph with two-level turnovers. [T]
 
 ```
 <EXTRACT>
-  <HD1>Appendix A to § 201.33—Notice of Intent To Enforce a Copyright Restored under the Uruguay Round Agreements Act (URAA)</HD1>
+  <HD1>Appendix A to Â§ 201.33â€”Notice of Intent To Enforce a Copyright Restored under the Uruguay Round Agreements Act (URAA)</HD1>
   <FP-DASH>1. Title:</FP-DASH>
   <P>(If this work does not have a title, state "No title.") OR</P>
   <P>Brief description of work (for untitled works only): \_\_\_\_</P>
@@ -1012,7 +1012,7 @@ This indicates flush text with remainder of line supplied with horizontal lowlin
 
 ```
 <EXTRACT>
-  <HD1>Appendix A to § 201.33—Notice of Intent To Enforce a Copyright Restored under the Uruguay Round Agreements Act (URAA)</HD1>
+  <HD1>Appendix A to Â§ 201.33â€”Notice of Intent To Enforce a Copyright Restored under the Uruguay Round Agreements Act (URAA)</HD1>
   <FP-DASH>1. Title:</FP-DASH>
   <P>(If this work does not have a title, state "No title.") OR</P>
   <P>Brief description of work (for untitled works only): \_\_\_\_</P>
@@ -1053,7 +1053,7 @@ This indicates a first-level indented paragraph with two-level turnovers. [T]
 
 ```
 <EXTRACT>
-  <HD1>Appendix A to § 201.33—Notice of Intent To Enforce a Copyright Restored under the Uruguay Round Agreements Act (URAA)</HD1>
+  <HD1>Appendix A to Â§ 201.33â€”Notice of Intent To Enforce a Copyright Restored under the Uruguay Round Agreements Act (URAA)</HD1>
   <FP-DASH>1. Title:</FP-DASH>
   <P>(If this work does not have a title, state "No title.") OR</P>
   <P>Brief description of work (for untitled works only): \_\_\_\_</P>
@@ -1221,7 +1221,7 @@ This means to write-in the line starting midway through the column.  [T]
 </EXTRACT>
 ```
 
-## 3.57. HD1 – HD6
+## 3.57. HD1 â€“ HD6
 
 These are headings that usually print centered (two lines or fewer) or flush left and hang (three or more lines).  Suggested styles for the various levels are given below:
 
@@ -1245,7 +1245,7 @@ These are headings that usually print centered (two lines or fewer) or flush lef
 
 ```
 <EXTRACT>
-  <HD1>Appendix B to § 201.39—Required Format for Continuation Sheet</HD1>
+  <HD1>Appendix B to Â§ 201.39â€”Required Format for Continuation Sheet</HD1>
   <FP-2>NLA CON</FP-2>
   <FP-2>Page \_\_of \_\_Pages.</FP-2>
   <HD3>Continuation Sheet for NLA Notice to Libraries and Archives of Normal Commercial Exploitation or Availability at Reasonable Price</HD3>
@@ -1261,12 +1261,12 @@ These are headings that usually print centered (two lines or fewer) or flush lef
 
 ## 3.58. HEAD
 
-This element provides a major heading/title for sections, i.e. `<DIV1>` – `<DIV9>` elements.
+This element provides a major heading/title for sections, i.e. `<DIV1>` â€“ `<DIV9>` elements.
 
 
 ```
 <DIV5 N="1" NODE="37:1.0.1.1.1" TYPE="PART">
-  <HEAD>PART 1—RULES OF PRACTICE IN PATENT CASES</HEAD>
+  <HEAD>PART 1â€”RULES OF PRACTICE IN PATENT CASES</HEAD>
   <AUTH>
     <HED>Authority:</HED>
     <PSPACE>35 U.S.C. 2(b)(2), unless otherwise noted.</PSPACE>
@@ -1301,7 +1301,7 @@ This indicates a heading that is intended to be centered. [T]
 
 ```
 <DIV4 N="A" NODE="37:1.0.1.1" TYPE="SUBCHAP">
-  <HEAD>SUBCHAPTER A—GENERAL</HEAD>
+  <HEAD>SUBCHAPTER Aâ€”GENERAL</HEAD>
   <TEXT>
     <HED1>
       <I>PATENTS</I>
@@ -1353,8 +1353,8 @@ This element contains a right column item in leaderwork text, i.e. `<LDRWK>`. [T
 
 
 ```
-<DIV8 N="§ 2.6" NODE="37:1.0.1.2.5.0.142.3" TYPE="SECTION">
-  <HEAD>§ 2.6   Trademark fees.</HEAD>
+<DIV8 N="Â§ 2.6" NODE="37:1.0.1.2.5.0.142.3" TYPE="SECTION">
+  <HEAD>Â§ 2.6   Trademark fees.</HEAD>
   <P>The Patent and Trademark Office requires the following fees and charges:</P>
   <P>(a) Trademark process fees.</P>
   <LDRWK>
@@ -1370,8 +1370,8 @@ This element contains a right column item in leaderwork text, i.e. `<LDRWK>`. [T
 This element encapsulates data at right and left ends of a line that are separated by leaders; usually preferable to using a table. [T]
 
 ```
-<DIV8 N="§ 2.6" NODE="37:1.0.1.2.5.0.142.3" TYPE="SECTION">
-  <HEAD>§ 2.6   Trademark fees.</HEAD>
+<DIV8 N="Â§ 2.6" NODE="37:1.0.1.2.5.0.142.3" TYPE="SECTION">
+  <HEAD>Â§ 2.6   Trademark fees.</HEAD>
   <P>The Patent and Trademark Office requires the following fees and charges:</P>
   <P>(a) Trademark process fees.</P>
   <LDRWK>
@@ -1380,7 +1380,7 @@ This element encapsulates data at right and left ends of a line that are separat
     <LDRFIG>$375.00</LDRFIG>
     <FL-2>(ii) For filing an application through TEAS, per class </FL-2>
     <LDRFIG>$325.00</LDRFIG>
-    …
+    â€¦
   </LDRWK>
 ```
 
@@ -1434,8 +1434,8 @@ This element is used to contain a note. The `<HED>` element is meant to be displ
 
 ```
 <NOTE>
-  <HED>Note to § 1.16:</HED>
-  <P>See §§ 1.445, 1.482 and 1.492 for international application filing and processing fees.</P>
+  <HED>Note to Â§ 1.16:</HED>
+  <P>See Â§Â§ 1.445, 1.482 and 1.492 for international application filing and processing fees.</P>
 </NOTE>
 ```
 
@@ -1444,8 +1444,8 @@ This element is used to contain a note. The `<HED>` element is meant to be displ
 This element defines a paragraph, that is, text that is set apart from the text before or after it.
 
 ```
-<HEAD>§ 1.1   Definitions.</HEAD>
-<P>As used in this chapter, unless the context requires otherwise—</P>
+<HEAD>Â§ 1.1   Definitions.</HEAD>
+<P>As used in this chapter, unless the context requires otherwiseâ€”</P>
 <P><I>Administrative Committee</I> means the Administrative Committee of the Federal Register established under section 1506 of title 44, United States Code; </P>
 ```
 
@@ -1455,7 +1455,7 @@ This is a first-level indented paragraph.
 
 ```
 <P>2.1.3<I>Common evaluations.</I> Evaluations common to all four HRS pathways include:</P>
-<P>• Characterizing sources.</P>
+<P>â€¢ Characterizing sources.</P>
 <P-1>-Identifying sources (and, for the soil exposure pathway, areas of observed contamination [see section 5.0.1]).</P-1>
 <P-1>-Identifying hazardous substances associated with each source (or area of observed contamination).</P-1>
 <P-1>-Identifying hazardous substances available to a pathway.</P-1>
@@ -1479,7 +1479,7 @@ This is a first-level indented paragraph with three-level turnovers.  [T]
 
 ```
 <DIV9 N="Appendix A" NODE="40:1.0.1.1.19.0.1.11.3" TYPE="APPENDIX">
-  <HEAD>Appendix A to Part 20—Guidelines for Certification</HEAD>
+  <HEAD>Appendix A to Part 20â€”Guidelines for Certification</HEAD>
   <FP-2>1. General.</FP-2>
   <FP-2>2. Air Pollution Control Facilities.</FP-2>
   <P-3>a. Pollution control or treatment facilities normally eligible for certification.</P-3>
@@ -1520,8 +1520,8 @@ This is a first-level indented paragraph with one-level turnovers. [T]
   <P>Office of Food Additive Safety (HFS-200), Center for Food Safety and Applied Nutrition, Food and Drug Administration, 5100 Paint Branch Pkwy., College Park, MD 20740.</P>
   <FP><E T="04">Dear Sirs:</E></FP>
   <P>The undersigned, \_\_\_\_\_ submits this petition pursuant to section 409(b)(1) of the Federal Food, Drug, and Cosmetic Act with respect to \_\_\_\_\_</P>
-  …
-  <P>H. The petitioner is required to submit either a claim for categorical exclusion under § 25.30 or 25.32 of this chapter or an environmental assessment under § 25.40 of this chapter. </P>
+  â€¦
+  <P>H. The petitioner is required to submit either a claim for categorical exclusion under Â§ 25.30 or 25.32 of this chapter or an environmental assessment under Â§ 25.40 of this chapter. </P>
   <P1>Yours very truly,</P1>
   <FP-DASH>Petitioner</FP-DASH>
   <FP-DASH>By</FP-DASH>
@@ -1557,7 +1557,7 @@ This is used to indicate the paragraph authority (Authority: ...).  The editor s
 This is a part header that has special use in contents and regular text.  [C, T]
 
 ```
-<PARTHD>Part 4—Preparation of the DD Form 250 and DD Form 250C</PARTHD>
+<PARTHD>Part 4â€”Preparation of the DD Form 250 and DD Form 250C</PARTHD>
 <SECHD>F-401Preparation instructions.</SECHD>
 <P>(a) <I>General.</I></P>
 ```
@@ -1571,22 +1571,22 @@ This is used to supply page number data in lists, contents. [F, C, T, B]
 <CFRTOC>
   <PTHD>Part</PTHD>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter i</E>—United States Patent and Trademark Office, Department of Commerce</SUBJECT>
+    <SUBJECT><E T="04">chapter i</E>â€”United States Patent and Trademark Office, Department of Commerce</SUBJECT>
     <PG>1</PG>
   </CHAPTI>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter ii</E>—U.S. Copyright Office, Library of Congress</SUBJECT>
+    <SUBJECT><E T="04">chapter ii</E>â€”U.S. Copyright Office, Library of Congress</SUBJECT>
     <PG>201</PG>
   </CHAPTI>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter iii</E>—Copyright Royalty Board, Library of Congress</SUBJECT>
+    <SUBJECT><E T="04">chapter iii</E>â€”Copyright Royalty Board, Library of Congress</SUBJECT>
     <PG>301</PG>
   </CHAPTI>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter iv</E>—Assistant Secretary for Technology Policy, Department of Commerce</SUBJECT>
+    <SUBJECT><E T="04">chapter iv</E>â€”Assistant Secretary for Technology Policy, Department of Commerce</SUBJECT>
     <PG>401</PG>
   </CHAPTI>
-  …
+  â€¦
 </CFRTOC>
 ```
 
@@ -1611,7 +1611,7 @@ This is a special type of paragraph text that can follow an in-line heading, whe
 This has special use in contents and indexes. [C, B]
 
 ```
-<HED>INDEX I—RULES RELATING TO PATENTS</HED>
+<HED>INDEX Iâ€”RULES RELATING TO PATENTS</HED>
 <EDNOTE>
 <HED>Editorial Note:</HED><PSPACE>This listing is provided for informational purposes only. It is compiled and kept current by the Department of Commerce. This index is updated as of July 1, 2012.</PSPACE></EDNOTE>
 <SECHD>Section</SECHD>
@@ -1633,14 +1633,14 @@ This is a special use header for contents and indexes. [C, B]
 <CFRTOC>
   <PTHD>Part</PTHD>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter i</E>—United States Patent and Trademark Office, Department of Commerce</SUBJECT>
+    <SUBJECT><E T="04">chapter i</E>â€”United States Patent and Trademark Office, Department of Commerce</SUBJECT>
     <PG>1</PG>
   </CHAPTI>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter ii</E>—U.S. Copyright Office, Library of Congress</SUBJECT>
+    <SUBJECT><E T="04">chapter ii</E>â€”U.S. Copyright Office, Library of Congress</SUBJECT>
     <PG>201</PG>
   </CHAPTI>
-  …
+  â€¦
 </CFRTOC>
 ```
 
@@ -1701,11 +1701,11 @@ This is used in editorial and effective date notes for text to be revised. [T]
 ```
 <EFFDNOT>
   <HED>Effective Date Note:</HED>
-  <PSPACE>At 67 FR 41823, June 20, 2002, § 352.20 was amended by revising paragraphs (a)(1) through (a)(2), effective Sept. 1, 2002. This amendment could not be incorporated because at 66 FR 67485, Dec. 31, 2001 the effective date was stayed until further notice. For the convenience of the user, the text is set forth as follows:</PSPACE>
+  <PSPACE>At 67 FR 41823, June 20, 2002, Â§ 352.20 was amended by revising paragraphs (a)(1) through (a)(2), effective Sept. 1, 2002. This amendment could not be incorporated because at 66 FR 67485, Dec. 31, 2001 the effective date was stayed until further notice. For the convenience of the user, the text is set forth as follows:</PSPACE>
   <REVTXT>
-    <HEAD>§ 352.20   Permitted combinations of active ingredients.</HEAD><STARS/>
-    <P>(a) <I>Combinations of sunscreen active ingredients.</I> (1) Two or more sunscreen active ingredients identified in § 352.10(a), (c), (e), (f), (g), and (i) through (r) may be combined with each other in a single product when used in the concentrations established for each ingredient in § 352.10. The concentration of each active ingredient must be sufficient to contribute a minimum SPF of not less than 2 to the finished product. The finished product must have a minimum SPF of not less than the number of sunscreen active ingredients used in the combination multiplied by 2.</P>
-    <P>(2) Two or more sunscreen active ingredients identified in § 352.10(b), (c), (e), (g), (j) through (m), (o), and (q) may be combined with each other in a single product when used in the concentrations established for each ingredient in § 352.10. The concentration of each active ingredient must be sufficient to contribute a minimum SPF of not less than 2 to the finished product. The finished product must have a minimum SPF of not less than the number of sunscreen active ingredients used in the combination multiplied by 2.</P><STARS/>
+    <HEAD>Â§ 352.20   Permitted combinations of active ingredients.</HEAD><STARS/>
+    <P>(a) <I>Combinations of sunscreen active ingredients.</I> (1) Two or more sunscreen active ingredients identified in Â§ 352.10(a), (c), (e), (f), (g), and (i) through (r) may be combined with each other in a single product when used in the concentrations established for each ingredient in Â§ 352.10. The concentration of each active ingredient must be sufficient to contribute a minimum SPF of not less than 2 to the finished product. The finished product must have a minimum SPF of not less than the number of sunscreen active ingredients used in the combination multiplied by 2.</P>
+    <P>(2) Two or more sunscreen active ingredients identified in Â§ 352.10(b), (c), (e), (g), (j) through (m), (o), and (q) may be combined with each other in a single product when used in the concentrations established for each ingredient in Â§ 352.10. The concentration of each active ingredient must be sufficient to contribute a minimum SPF of not less than 2 to the finished product. The finished product must have a minimum SPF of not less than the number of sunscreen active ingredients used in the combination multiplied by 2.</P><STARS/>
   </REVTXT>
 </EFFDNOT>
 ```
@@ -1756,7 +1756,7 @@ This is used to indicate the section authority (Authority: ...).  This element s
 This is used for the "Sec." appearing in the contents [C, T]
 
 ```
-<HED>INDEX I—RULES RELATING TO PATENTS</HED>
+<HED>INDEX Iâ€”RULES RELATING TO PATENTS</HED>
 <EDNOTE>
 <HED>Editorial Note:</HED><PSPACE>This listing is provided for informational purposes only. It is compiled and kept current by the Department of Commerce. This index is updated as of July 1, 2012.</PSPACE></EDNOTE>
 <SECHD>Section</SECHD>
@@ -1769,16 +1769,16 @@ This is used for the "Sec." appearing in the contents [C, T]
 
 ## 3.93.SECTNO
 
-This is a section number: without "§" in contents; with "§" at section heading. [C, T, B]
+This is a section number: without "Â§" in contents; with "Â§" at section heading. [C, T, B]
 
 ```
 <DIV6 N="D" NODE="21:8.0.1.1.15.4" TYPE="SUBPART">
-  <HEAD>Subpart D—FDA as an Issuing Agency</HEAD>
+  <HEAD>Subpart Dâ€”FDA as an Issuing Agency</HEAD>
   <SOURCE>
     <HED>Source:</HED>
     <PSPACE>78 FR 55826, Sept. 24, 2013, unless otherwise noted.</PSPACE>
   </SOURCE>
-  <SECTNO>§ 830.200</SECTNO>
+  <SECTNO>Â§ 830.200</SECTNO>
   <SUBJECT>When FDA will act as an issuing agency.</SUBJECT>
 ```
 
@@ -1792,7 +1792,7 @@ This is a source statement that usually contains a mini-header. Almost every `<D
 
 ```
 <DIV5 N="1" NODE="37:1.0.1.1.1" TYPE="PART">
-<HEAD>PART 1—RULES OF PRACTICE IN PATENT CASES</HEAD>
+<HEAD>PART 1â€”RULES OF PRACTICE IN PATENT CASES</HEAD>
 <AUTH>
   <HED>Authority:</HED>
   <PSPACE>35 U.S.C. 2(b)(2), unless otherwise noted.</PSPACE>
@@ -1851,7 +1851,7 @@ This element is used to hold an agency indexes in Title 37. [Text]
 
 ```
 <SUBCHIND>
-<HED>INDEX I—RULES RELATING TO PATENTS</HED>
+<HED>INDEX Iâ€”RULES RELATING TO PATENTS</HED>
 <EDNOTE>
 <HED>Editorial Note:</HED><PSPACE>This listing is provided for informational purposes only. It is compiled and kept current by the Department of Commerce. This index is updated as of July 1, 2012.</PSPACE></EDNOTE>
 <SECHD>Section</SECHD>
@@ -1867,7 +1867,7 @@ This element is used to hold an agency indexes in Title 37. [Text]
 This has special use in indexes under second-level division head. It will usually be styled with leaders. [B]
 
 ```
-<HED>INDEX I—RULES RELATING TO PATENTS</HED>
+<HED>INDEX Iâ€”RULES RELATING TO PATENTS</HED>
 <EDNOTE>
 <HED>Editorial Note:</HED><PSPACE>This listing is provided for informational purposes only. It is compiled and kept current by the Department of Commerce. This index is updated as of July 1, 2012.</PSPACE></EDNOTE>
 <SECHD>Section</SECHD>
@@ -1923,7 +1923,7 @@ This has special use in indexes under fourth-level division head. It will usuall
 This is used in a table of contents and at section head levels to mark section heading text [F, C, T, B]
 
 ```
-<HED>INDEX I—RULES RELATING TO PATENTS</HED>
+<HED>INDEX Iâ€”RULES RELATING TO PATENTS</HED>
 <EDNOTE>
 <HED>Editorial Note:</HED><PSPACE>This listing is provided for informational purposes only. It is compiled and kept current by the Department of Commerce. This index is updated as of July 1, 2012.</PSPACE></EDNOTE>
 <SECHD>Section</SECHD>
@@ -1992,11 +1992,11 @@ This has special use in title page (page i) and the table of contents. [F, C]
 ```
 <CFRTOC>
   <SUBTI>
-    <HED>SUBTITLE B—<E T="04">Regulations Relating to Labor (Continued)</E></HED>
+    <HED>SUBTITLE Bâ€”<E T="04">Regulations Relating to Labor (Continued)</E></HED>
   </SUBTI>
   <PTHD>Part</PTHD>
   <CHAPTI>
-    <SUBJECT><E T="04">chapter xvii</E>—Occupational Safety and Health Administration, Department of Labor (Continued)</SUBJECT>
+    <SUBJECT><E T="04">chapter xvii</E>â€”Occupational Safety and Health Administration, Department of Labor (Continued)</SUBJECT>
     <PG>1910</PG>
   </CHAPTI>
 </CFRTOC>
@@ -2009,7 +2009,7 @@ This indicates text that should be rendered as superscript.
 
 ```
 <DIV9 N="Appendix to" NODE="37:1.0.1.4.15.2.214.15.2" TYPE="APPENDIX">
-  <HEAD>Appendix to Part 102—Systems of Records Noticed by Other Federal Agencies
+  <HEAD>Appendix to Part 102â€”Systems of Records Noticed by Other Federal Agencies
 <SU>1</SU> and Applicable to USPTO Records and Applicability of This Part Thereto</HEAD>
   <DIV width="100%">
     <DIV class="gpotbl\_div">
@@ -2068,9 +2068,9 @@ This is used in effective date notes to mark superseded text. [T]
 ```
 <EFFDNOT>
   <HED>Effective Date Note:</HED>
-  <PSPACE>At 44 FR 37467, June 26, 1979, § 202.1(e)(6) (ii) and (vii) were revised. At 44 FR 74817, Dec. 18, 1979, paragraphs (e)(6) (ii) and (vii) were stayed indefinitely. At 64 FR 400, Jan. 5, 1999, these paragraphs were amended. For the convenience of the user, paragraphs (e)(6) (ii) and (vii), published at 44 FR 37467, are set forth below:</PSPACE>
+  <PSPACE>At 44 FR 37467, June 26, 1979, Â§ 202.1(e)(6) (ii) and (vii) were revised. At 44 FR 74817, Dec. 18, 1979, paragraphs (e)(6) (ii) and (vii) were stayed indefinitely. At 64 FR 400, Jan. 5, 1999, these paragraphs were amended. For the convenience of the user, paragraphs (e)(6) (ii) and (vii), published at 44 FR 37467, are set forth below:</PSPACE>
   <SUPERSED>
-    <HEAD>§ 202.1   Prescription-drug advertisements.</HEAD><STARS/>
+    <HEAD>Â§ 202.1   Prescription-drug advertisements.</HEAD><STARS/>
     <P>(e) \* \* \*</P>
     <P>(6) \* \* \*</P>
     <P>(ii) Represents or suggests that a prescription drug is safer
@@ -2166,7 +2166,7 @@ This is used under `<DIV#>` elements where no `<DIV#>` element follows and other
 <DIV4 N="" NODE="37:1.0.1.2" TYPE="SUBCHAP">
   <HEAD></HEAD>
   <TEXT>
-    <HED1>PART 1—RULES OF PRACTICE IN PATENT CASES</HED1>
+    <HED1>PART 1â€”RULES OF PRACTICE IN PATENT CASES</HED1>
     <EDNOTE>
       <HED>Editorial Note:</HED>
       <PSPACE>Part 1 is placed in the separate grouping of parts pertaining to patents regulations.</PSPACE>
@@ -2277,8 +2277,8 @@ This is a Table Row element.  It is a sub-element of `<TABLE>`.
 This element is used to create cross references. It has both an identifier and a reference identifier.
 
 ```
-<DIV8 N="§ 1.36" NODE="37:1.0.1.1.1.2.69.5" TYPE="SECTION">
-  <HEAD>§ 1.36   Revocation of power of attorney; withdrawal of patent attorney or agent.</HEAD>
+<DIV8 N="Â§ 1.36" NODE="37:1.0.1.1.1.2.69.5" TYPE="SECTION">
+  <HEAD>Â§ 1.36   Revocation of power of attorney; withdrawal of patent attorney or agent.</HEAD>
   <XREF ID="20140307" REFID="4">Link to an amendment published at 79 FR 12944, March 7, 2014.</XREF>
 ```
 
