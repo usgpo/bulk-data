@@ -1,7 +1,5 @@
 # bulk-data
 
->2020-05-01: Today's issue is currently unavailable; we apologize for any inconvenience. 
-
 GPO provides the capability to download XML in bulk for select collections from https://www.govinfo.gov/bulkdata. 
 
 Please see the User Guides within this repository for more information on how to make use of the XML data for the available collections.
