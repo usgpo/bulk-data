@@ -1,5 +1,3 @@
->Due to a technical issue, today’s Federal Register is not yet available online. A team is working on the issue. 
-
 # bulk-data
 
 GPO provides the capability to download XML in bulk for select collections from https://www.govinfo.gov/bulkdata. 
