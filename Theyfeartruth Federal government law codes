@@ -1,0 +1,1 @@
+docker push docker.pkg.github.com/theyfeartruthfedgov/bulk-data/IMAGE_NAME:VERSION
