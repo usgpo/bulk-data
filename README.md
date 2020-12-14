@@ -16,6 +16,12 @@ https://www.govinfo.gov/bulkdata/BILLS/115/1/hjres<br/>
 XML: https://www.govinfo.gov/bulkdata/xml/BILLS/115/1/hjres<br/>
 JSON: https://www.govinfo.gov/bulkdata/json/BILLS/115/1/hjres
 
+#### Note
+If crawling the xml and json endpoints programmatically, you should ensure that you set the appropriate accept headers in your request, or you may see a 406 response.
+e.g for json - `Accept: application/json`
+
+
+
 ### Examples 
 
 Federal Register Issues from September 2012: http://www.govinfo.gov/bulkdata/FR/2012/09
@@ -23,6 +29,7 @@ Federal Register Issues from September 2012: http://www.govinfo.gov/bulkdata/FR/
 Code of Federal Regulations: http://www.govinfo.gov/bulkdata/CFR/
 
 Bills back to the 113th Congress: http://www.govinfo.gov/bulkdata/BILLS
+
 
 
 
