@@ -31,7 +31,7 @@ Data repository for Bill Summaries is available at
 <http://www.gpo.gov/fdsys/bulkdata/BILLSUM>.
 
 
-###1.1 Types of Bill Summaries
+### 1.1 Types of Bill Summaries
 
 Bill summaries are summaries of bills or resolutions, as well as other document types associated
 with the legislative history of a measure such as amendments, committee reports, conference
