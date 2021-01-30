@@ -36,7 +36,7 @@ The purpose of this document is to provide an overview of e-CFR XML files and as
 
 **Q. What is the data set available for the e-CFR in XML?**
 
-**A.        ** E–CFR files in XML have been converted and simplified from data in SGML that originates at the OFR.  The E–CFR is available in XML starting with the year 2015. Only the most recent e-CFR data will be available at endpoints on the FDsys Bulk Data Repository. Please see [www.ecfr.gov](http://www.ecfr.gov/) to search and browse a point in time edition of the e-CFR.
+**A.** E–CFR files in XML have been converted and simplified from data in SGML that originates at the OFR.  The E–CFR is available in XML starting with the year 2015. Only the most recent e-CFR data will be available at endpoints on the FDsys Bulk Data Repository. Please see [www.ecfr.gov](http://www.ecfr.gov/) to search and browse a point in time edition of the e-CFR.
 
 **Q.  Are e-CFR XML files offered on the FDsys Bulk Data Repository part of the official version of the CFR?**
 
@@ -52,11 +52,11 @@ In particular, refer to the PDF versions found there.
 
 **Q.  Are e-CFR XML bulk download files digitally signed?**
 
-**A.  ** No, XML files available for download are not digitally signed.  They can be manipulated and enriched to operate in the various applications that users may devise.
+**A.** No, XML files available for download are not digitally signed.  They can be manipulated and enriched to operate in the various applications that users may devise.
 
 **Q. How reliable are the metadata and the underlying tagging in bulk data files?**
 
-**A.  ** The document markup and metadata found within bulk data files are generally reliable and complete.  However, there are variations in this underlying data due to inconsistencies in the composition and typesetting process.  As a result, some data-mining applications and user aids may not produce 100 per cent accurate results.
+**A.** The document markup and metadata found within bulk data files are generally reliable and complete.  However, there are variations in this underlying data due to inconsistencies in the composition and typesetting process.  As a result, some data-mining applications and user aids may not produce 100 per cent accurate results.
 
 **Q.  What is the legal status of e-CFR user aids?**
 
@@ -306,7 +306,7 @@ As per the example above there are usually both a low-resolution image in GIF fo
       - er28mr12.000.pdf
       - ...
 
-# 3.Alphabetical List of XML Elements
+# 3. Alphabetical List of XML Elements
 
 The XML elements that appear in the Titles of the e-CFR are listed below with a brief description of their meaning.  In some cases, the description may include one of the following in square brackets, i.e. [], to show where they are typically used. Note that additional elements may appear in addition to the elements listed below.
 
@@ -683,6 +683,7 @@ This is a division or section of a document that is grouped into a block, often 
   </DIV>
 </DIV9>
 ```
+
 ## 3.22. DIV1
 
 This element denotes the first-level subdivision of the content body of the XML document. For e-CFR documents this element encapsulates the body of an entire CFR Title or CFR Title volume. The values of the "N" and "TYPE" attributes are always set to "1" and "TITLE" respectively in the e-CFR XML data when there are no volumes. Otherwise, "N" will have the number of the volume. Other subdivision elements such as `<DIV2>`, `<DIV3>`, and so on, will be nested within this element.
@@ -1009,7 +1010,6 @@ This indicates a flush paragraph with two-level turnovers. [T]
 
 This indicates flush text with remainder of line supplied with horizontal lowline-dash rule (as used with forms). It should only be used within extract or appendix. [T]
 
-
 ```
 <EXTRACT>
   <HD1>Appendix A to § 201.33—Notice of Intent To Enforce a Copyright Restored under the Uruguay Round Agreements Act (URAA)</HD1>
@@ -1050,7 +1050,6 @@ This indicates flush text with remainder of line supplied with horizontal lowlin
 
 This indicates a first-level indented paragraph with two-level turnovers. [T]
 
-
 ```
 <EXTRACT>
   <HD1>Appendix A to § 201.33—Notice of Intent To Enforce a Copyright Restored under the Uruguay Round Agreements Act (URAA)</HD1>
@@ -1090,7 +1089,6 @@ This indicates a first-level indented paragraph with two-level turnovers. [T]
 ## 3.48. FP2
 
 This denotes a flush paragraph with two-level turnovers.  [T]
-
 
 ```
 <FP-2>MCF<E T="52">i</E> = Moisture correction factor for the measurement period, volumetric basis.</FP-2>
@@ -1134,7 +1132,6 @@ This is a second-level indented paragraph with three-level turnovers. [T]
 
 This indicates a fractional number.
 
-
 ```
 <NOTE>
   <HED>Note:</HED>
@@ -1145,7 +1142,6 @@ This indicates a fractional number.
 ## 3.52. FRP
 
 This denotes a flush right text (left is ragged), held one em from right margin. [T]
-
 
 ```
 <EXTRACT>
@@ -1166,7 +1162,6 @@ This denotes a flush right text (left is ragged), held one em from right margin.
 ## 3.53. FRP0
 
 This denotes true flush right material where the left side is ragged.  [T]
-
 
 ```
 <MATH BORDER="NODRAW" DEEP="31" HTYPE="CENTER" POSITION="NOFLOAT" ROTATION="P" SPAN="1" STRIP="YES">
@@ -1211,7 +1206,6 @@ This is a footnote reference and should be followed by `<FTNT>`text`</FTNT>`.
 ## 3.56. HALFDASH
 
 This means to write-in the line starting midway through the column.  [T]
-
 
 ```
 <EXTRACT>
@@ -1263,7 +1257,6 @@ These are headings that usually print centered (two lines or fewer) or flush lef
 
 This element provides a major heading/title for sections, i.e. `<DIV1>` – `<DIV9>` elements.
 
-
 ```
 <DIV5 N="1" NODE="37:1.0.1.1.1" TYPE="PART">
   <HEAD>PART 1—RULES OF PRACTICE IN PATENT CASES</HEAD>
@@ -1281,11 +1274,9 @@ This element provides a major heading/title for sections, i.e. `<DIV1>` – `<DI
 
 This element contains the Header section of each XML document.  It occurs exactly once per XML document and it occurs immediately following the root element.  See [Section 2.1](#2.1.-Outer-XML-Structure)
 
-
-## 3.60.HED
+## 3.60. HED
 
 This marks text following other tags for special handling such as applying a style to offset the text from that which follows. [C, T, B]
-
 
 ```
 <EDNOTE>
@@ -1297,7 +1288,6 @@ This marks text following other tags for special handling such as applying a sty
 ## 3.61. HED1
 
 This indicates a heading that is intended to be centered. [T]
-
 
 ```
 <DIV4 N="A" NODE="37:1.0.1.1" TYPE="SUBCHAP">
@@ -1343,14 +1333,13 @@ This element defines the location of an image within the document. It has one re
   <img src="http://www.ecfr.gov/graphics/er28mr12.000.gif"/>
 ```
 
-## 3.65.KEYWORDS
+## 3.65. KEYWORDS
 
 This element is the only element found within the `<TEXTCLASS>` element and is always found to be empty so far. See [Section 2.2](#2.2.-Header-Content)
 
-## 3.66.LDRFIG
+## 3.66. LDRFIG
 
 This element contains a right column item in leaderwork text, i.e. `<LDRWK>`. [T]
-
 
 ```
 <DIV8 N="§ 2.6" NODE="37:1.0.1.2.5.0.142.3" TYPE="SECTION">
@@ -1365,7 +1354,7 @@ This element contains a right column item in leaderwork text, i.e. `<LDRWK>`. [T
     <LDRFIG>$325.00</LDRFIG>
 ```
 
-## 3.67.LDRWK
+## 3.67. LDRWK
 
 This element encapsulates data at right and left ends of a line that are separated by leaders; usually preferable to using a table. [T]
 
@@ -1384,7 +1373,7 @@ This element encapsulates data at right and left ends of a line that are separat
   </LDRWK>
 ```
 
-## 3.68.LI
+## 3.68. LI
 
 This is a list item that can be used in tables, but especially used with the `<SCOL2>` element.
 
@@ -1417,10 +1406,9 @@ This is a list item that can be used in tables, but especially used with the `<S
 </EXTRACT>
 ```
 
-## 3.69.MATH
+## 3.69. MATH
 
 This normally begins and ends location where MathType equations are supplied; a number of attributes can be indicated, such as column span, depth, indention, rotation, etc. (`<MATH SPAN='2' DEEP='250'>`).
-
 
 ```
 <MATH BORDER="NODRAW" DEEP="26" HTYPE="CENTER" POSITION="NOFLOAT" ROTATION="P" SPAN="2" STRIP="YES">
@@ -1428,7 +1416,7 @@ This normally begins and ends location where MathType equations are supplied; a 
 </MATH>
 ```
 
-## 3.70.NOTE
+## 3.70. NOTE
 
 This element is used to contain a note. The `<HED>` element is meant to be displayed as Caps and Small Caps with space supplied above and below. [F, C, T, B]
 
@@ -1439,7 +1427,7 @@ This element is used to contain a note. The `<HED>` element is meant to be displ
 </NOTE>
 ```
 
-## 3.71.P
+## 3.71. P
 
 This element defines a paragraph, that is, text that is set apart from the text before or after it.
 
@@ -1449,7 +1437,7 @@ This element defines a paragraph, that is, text that is set apart from the text 
 <P><I>Administrative Committee</I> means the Administrative Committee of the Federal Register established under section 1506 of title 44, United States Code; </P>
 ```
 
-## 3.72.P-1
+## 3.72. P-1
 
 This is a first-level indented paragraph.
 
@@ -1461,7 +1449,7 @@ This is a first-level indented paragraph.
 <P-1>-Identifying hazardous substances available to a pathway.</P-1>
 ```
 
-## 3.73.P-2
+## 3.73. P-2
 
 This is a second-level indented paragraph.
 
@@ -1473,7 +1461,7 @@ This is a second-level indented paragraph.
 <P-2>(c) Mouse specific locus test</P-2>
 ```
 
-## 3.74.P-3
+## 3.74. P-3
 
 This is a first-level indented paragraph with three-level turnovers.  [T]
 
@@ -1490,7 +1478,7 @@ This is a first-level indented paragraph with three-level turnovers.  [T]
 <P-3>a. Pollution control or treatment facilities normally eligible for certification.</P-3>
 ```
 
-## 3.75.P-DASH
+## 3.75. P-DASH
 
 This is a first-level indented phrase with the remainder of line composed of low-line dashes.  This is frequently used in forms.  [T]
 
@@ -1505,7 +1493,7 @@ This is a first-level indented phrase with the remainder of line composed of low
 </EXTRACT>
 ```
 
-## 3.76.P1
+## 3.76. P1
 
 This is a first-level indented paragraph with one-level turnovers. [T]
 
@@ -1529,7 +1517,7 @@ This is a first-level indented paragraph with one-level turnovers. [T]
 </EXTRACT>
 ```
 
-## 3.77.P2
+## 3.77. P2
 
 This is a second-level indented paragraph. [T]
 
@@ -1544,7 +1532,7 @@ This is a second-level indented paragraph. [T]
 </EXTRACT>
 ```
 
-## 3.78.PARAUTH
+## 3.78. PARAUTH
 
 This is used to indicate the paragraph authority (Authority: ...).  The editor should supply space above and below. [T]
 
@@ -1552,7 +1540,7 @@ This is used to indicate the paragraph authority (Authority: ...).  The editor s
 <PARAUTH TYPE="N">(18 U.S.C., section 1001 (1986))</PARAUTH>
 ```
 
-## 3.79.PARTHD
+## 3.79. PARTHD
 
 This is a part header that has special use in contents and regular text.  [C, T]
 
@@ -1590,11 +1578,11 @@ This is used to supply page number data in lists, contents. [F, C, T, B]
 </CFRTOC>
 ```
 
-## 3.81.PROFILEDESC
+## 3.81. PROFILEDESC
 
 This element contains a profile description.  It is never observed to be populated. It is found inside the `<HEADER>` element. See [Section 2.2](#2.2.-Header-Content)
 
-## 3.82.PSPACE
+## 3.82. PSPACE
 
 This is a special type of paragraph text that can follow an in-line heading, whereas the `<P>` element will normally cause undesired line breaks to occur before the text begins.
 
@@ -1606,7 +1594,7 @@ This is a special type of paragraph text that can follow an in-line heading, whe
 </EDNOTE>
 ```
 
-## 3.83.PT
+## 3.83. PT
 
 This has special use in contents and indexes. [C, B]
 
@@ -1625,7 +1613,7 @@ This has special use in contents and indexes. [C, B]
 <PT>1.316</PT>
 ```
 
-## 3.84.PTHD
+## 3.84. PTHD
 
 This is a special use header for contents and indexes. [C, B]
 
@@ -1644,7 +1632,7 @@ This is a special use header for contents and indexes. [C, B]
 </CFRTOC>
 ```
 
-## 3.85.PUBLICATIONSTMT
+## 3.85. PUBLICATIONSTMT
 
 This is a publication statement element that may be found in a couple of places inside the `<HEADER>` element.
 
@@ -1657,7 +1645,7 @@ This is a publication statement element that may be found in a couple of places 
 </PUBLICATIONSTMT>
 ```
 
-## 3.86.PUBLISHER
+## 3.86. PUBLISHER
 
 This element gives the publisher's name and is found inside the `<PUBLICATIONSTMT>` element. It has not been found to contain a value so far.
 
@@ -1670,7 +1658,7 @@ This element gives the publisher's name and is found inside the `<PUBLICATIONSTM
 </PUBLICATIONSTMT>
 ```
 
-## 3.87.PUBPLACE
+## 3.87. PUBPLACE
 
 This element gives the publisher's location and is found inside the `<PUBLICATIONSTMT>` element. It has not been found to contain a value so far.
 
@@ -1683,7 +1671,7 @@ This element gives the publisher's location and is found inside the `<PUBLICATIO
 </PUBLICATIONSTMT>
 ```
 
-## 3.88.RESERVED
+## 3.88. RESERVED
 
 This is used in place of `<SUBJECT>` or, after `<PART>`, in place of `<HED>`, where they are [Reserved].
 
@@ -1694,7 +1682,7 @@ This is used in place of `<SUBJECT>` or, after `<PART>`, in place of `<HED>`, wh
 </DIV2>
 ```
 
-## 3.89.REVTXT
+## 3.89. REVTXT
 
 This is used in editorial and effective date notes for text to be revised. [T]
 
@@ -1710,7 +1698,7 @@ This is used in editorial and effective date notes for text to be revised. [T]
 </EFFDNOT>
 ```
 
-## 3.90.SCOL2
+## 3.90. SCOL2
 
 This is used for long lists of short terms with each on its own line, so that two narrow columns will appear in one text-width column (each entry is tagged with `<LI>`).
 
@@ -1743,7 +1731,7 @@ This is used for long lists of short terms with each on its own line, so that tw
 </EXTRACT>
 ```
 
-## 3.91.SECAUTH
+## 3.91. SECAUTH
 
 This is used to indicate the section authority (Authority: ...).  This element should automatically supply space above and below. [T]
 
@@ -1751,7 +1739,7 @@ This is used to indicate the section authority (Authority: ...).  This element s
 <SECAUTH TYPE="N">(Pub. L. 94-131, 89 Stat. 685; 35 U.S.C. 6, Pub. L. 97-247) </SECAUTH>
 ```
 
-## 3.92.SECHD
+## 3.92. SECHD
 
 This is used for the "Sec." appearing in the contents [C, T]
 
@@ -1767,7 +1755,7 @@ This is used for the "Sec." appearing in the contents [C, T]
 <SUBJ1L>Abandonment during interference</SUBJ1L>
 ```
 
-## 3.93.SECTNO
+## 3.93. SECTNO
 
 This is a section number: without "§" in contents; with "§" at section heading. [C, T, B]
 
@@ -1782,11 +1770,11 @@ This is a section number: without "§" in contents; with "§" at section heading
   <SUBJECT>When FDA will act as an issuing agency.</SUBJECT>
 ```
 
-## 3.94.SERIESSTMT
+## 3.94. SERIESSTMT
 
 This element contains a series statement. It is never observed to be populated with any meaningful data. It is found inside the `<FILEDESC>` element. [Section 2.2](#2.2.-Header-Content)
 
-## 3.95.SOURCE
+## 3.95. SOURCE
 
 This is a source statement that usually contains a mini-header. Almost every `<DIV#>` element has one.
 
@@ -1803,7 +1791,7 @@ This is a source statement that usually contains a mini-header. Almost every `<D
 </SOURCE>
 ```
 
-## 3.96.STARS
+## 3.96. STARS
 
 This marks dropped text.
 
@@ -1817,7 +1805,7 @@ This marks dropped text.
 </EXTRACT>
 ```
 
-## 3.97.strong
+## 3.97. strong
 
 This element denotes that the enclosed text is important.
 
@@ -1825,7 +1813,7 @@ This element denotes that the enclosed text is important.
 <P class="gpotbl\_note"><sup>a</sup> <strong>Note:</strong> These alternate standards for 2016 and later are the same as the otherwise applicable standards for 2017 and later.</P>
 ```
 
-## 3.98.SU
+## 3.98. SU
 
 This indicates superscript text.
 
@@ -1837,7 +1825,7 @@ This indicates superscript text.
 </FTNT>
 ```
 
-## 3.99.sub
+## 3.99. sub
 
 This indicates that the enclosed text is subscripted.
 
@@ -1845,7 +1833,7 @@ This indicates that the enclosed text is subscripted.
 <P class="gpotbl\_note">Let <em>M</em><sub>2</sub>, <em>M</em><sub>3</sub> . . . <em>M</em><sub>n</sub> be donor masses to be combined.</P>
 ```
 
-## 3.100.SUBCHIND
+## 3.100. SUBCHIND
 
 This element is used to hold an agency indexes in Title 37. [Text]
 
@@ -1862,7 +1850,7 @@ This element is used to hold an agency indexes in Title 37. [Text]
 <SUBJ1L>Abandonment during interference</SUBJ1L>
 ```
 
-## 3.101.SUBJ1L
+## 3.101. SUBJ1L
 
 This has special use in indexes under second-level division head. It will usually be styled with leaders. [B]
 
@@ -1878,7 +1866,7 @@ This has special use in indexes under second-level division head. It will usuall
 <SUBJ1L>Abandonment during interference</SUBJ1L>
 ```
 
-## 3.102.SUBJ2L
+## 3.102. SUBJ2L
 
 This has special use in indexes under third-level division head. It will usually be styled with leaders. [B]
 
@@ -1898,7 +1886,7 @@ This has special use in indexes under third-level division head. It will usually
 <PT>1.776</PT>
 ```
 
-## 3.103.SUBJ3L
+## 3.103. SUBJ3L
 
 This has special use in indexes under fourth-level division head. It will usually be styled with leaders. [B]
 
@@ -1918,7 +1906,7 @@ This has special use in indexes under fourth-level division head. It will usuall
 <PT>1.776</PT>
 ```
 
-## 3.104.SUBJECT
+## 3.104. SUBJECT
 
 This is used in a table of contents and at section head levels to mark section heading text [F, C, T, B]
 
@@ -1934,7 +1922,8 @@ This is used in a table of contents and at section head levels to mark section h
 <SUBJ1L>Abandonment during interference</SUBJ1L>
 ```
 
-## 3.105.SUBJECT1
+## 3.105. SUBJECT1
+
 This is a second-level division head in indexes. [B]
 
 ```
@@ -1953,7 +1942,7 @@ This is a second-level division head in indexes. [B]
 <PT>1.776</PT>
 ```
 
-## 3.106.SUBJECT2
+## 3.106. SUBJECT2
 
 This is a third-level division head in indexes. [B]
 
@@ -1973,7 +1962,7 @@ This is a third-level division head in indexes. [B]
 <PT>1.776</PT>
 ```
 
-## 3.107.SUBJL
+## 3.107. SUBJL
 
 This has special use in indexes under main division head, with leaders. [B]
 
@@ -1985,7 +1974,7 @@ This has special use in indexes under main division head, with leaders. [B]
 <PT>1.52(b)(4), 1.72(b)</PT>
 ```
 
-## 3.108.SUBTI
+## 3.108. SUBTI
 
 This has special use in title page (page i) and the table of contents. [F, C]
 
@@ -2002,10 +1991,9 @@ This has special use in title page (page i) and the table of contents. [F, C]
 </CFRTOC>
 ```
 
-## 3.109.sup
+## 3.109. sup
 
 This indicates text that should be rendered as superscript.
-
 
 ```
 <DIV9 N="Appendix to" NODE="37:1.0.1.4.15.2.214.15.2" TYPE="APPENDIX">
@@ -2061,7 +2049,7 @@ This indicates text that should be rendered as superscript.
 </DIV9>
 ```
 
-## 3.110.SUPERSED
+## 3.110. SUPERSED
 
 This is used in effective date notes to mark superseded text. [T]
 
@@ -2083,7 +2071,7 @@ This is used in effective date notes to mark superseded text. [T]
 </EFFDNOT>
 ```
 
-## 3.111.TABLE
+## 3.111. TABLE
 
 This element contains a table in text (used the same way as `<APPENDIX>`). [T]
 
@@ -2116,7 +2104,7 @@ This element contains a table in text (used the same way as `<APPENDIX>`). [T]
 </TABLE>
 ```
 
-## 3.112.TCAP
+## 3.112. TCAP
 
 This is a top caption line for graphic or mathpac insert. [T]
 
@@ -2127,7 +2115,7 @@ This is a top caption line for graphic or mathpac insert. [T]
 <P/><P/>
 ```
 
-## 3.113.TD
+## 3.113. TD
 
 This is a Table Data element.  It is a sub-element of `<TR>`.
 
@@ -2157,10 +2145,9 @@ This is a Table Data element.  It is a sub-element of `<TR>`.
 </TABLE>
 ```
 
-## 3.114.TEXT
+## 3.114. TEXT
 
 This is used under `<DIV#>` elements where no `<DIV#>` element follows and other catchall situations. [T, B]
-
 
 ```
 <DIV4 N="" NODE="37:1.0.1.2" TYPE="SUBCHAP">
@@ -2179,11 +2166,11 @@ This is used under `<DIV#>` elements where no `<DIV#>` element follows and other
   </TEXT>
 ```
 
-## 3.115.TEXTCLASS
+## 3.115. TEXTCLASS
 
 This element contains information relevant to the text class.  It is never observed to be populated.  It is found inside the `<PROFILEDESC>` element.  See [Section 2.2](#2.2.-Header-Content)
 
-## 3.116.TH
+## 3.116. TH
 
 This is a Table Header element.  It is a sub-element of `<TR>`.
 
@@ -2216,7 +2203,7 @@ This is a Table Header element.  It is a sub-element of `<TR>`.
 </TABLE>
 ```
 
-## 3.117.TITLE
+## 3.117. TITLE
 
 This element contains a title (not to be confused with a CFR Title, although it is normally the title of the CFR Title).  It is found within the `<TITLESTMT>`  or  `<SERIESSTMT>` elements.
 
@@ -2227,7 +2214,7 @@ This element contains a title (not to be confused with a CFR Title, although it 
 </TITLESTMT>
 ```
 
-## 3.118.TITLESTMT
+## 3.118. TITLESTMT
 
 This element groups title and author information.  It is normally found within the `<FILEDESC>` and `<BIBLFULL>` elements.
 
@@ -2241,7 +2228,6 @@ This element groups title and author information.  It is normally found within t
 ## 3.119. TR
 
 This is a Table Row element.  It is a sub-element of `<TABLE>`.
-
 
 ```
 <TABLE border="1" cellpadding="1" cellspacing="1" class="gpotbl\_table" frame="void" width="100%">
@@ -2272,7 +2258,7 @@ This is a Table Row element.  It is a sub-element of `<TABLE>`.
 </TABLE>
 ```
 
-## 3.120.XREF
+## 3.120. XREF
 
 This element is used to create cross references. It has both an identifier and a reference identifier.
 
@@ -2283,7 +2269,7 @@ This element is used to create cross references. It has both an identifier and a
 ```
 
 
-# 4.Resources Directory
+# 4. Resources Directory
 
 The resources directory in the Electronic CFR Bulk Data Repository is found at [http://www.gpo.gov/fdsys/bulkdata/ECFR/resources](http://www.gpo.gov/fdsys/bulkdata/ECFR/resources) and contains the current version of this user guide.
 
