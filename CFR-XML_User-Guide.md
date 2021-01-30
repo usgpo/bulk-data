@@ -13,7 +13,7 @@ U.S. Government Publishing Office
 - 1.1 March 2015
   Markdown version
 
-# 1.Introduction
+# 1. Introduction
 
 The U.S. Government Publishing Office (GPO) and the National Archives' Office of the Federal Register (OFR) partnership is offering bulk data downloads of Code of Federal Regulations (CFR) files to the general public via Data.gov and FDsys. This effort began when the President challenged Federal agencies to create a more open and transparent government, promote accountability, and provide information to citizens about what their Government is doing (see [74 FR 4685, January 26, 2009](http://www.gpo.gov/fdsys/pkg/FR-2009-01-26/pdf/E9-1777.pdf)).
 
@@ -21,17 +21,17 @@ The [Public Printer's letter of March 9, 2009](http://www.gpo.gov/pdfs/news-medi
 
 In addition, the Office of the Federal Register coordinates with the Office of Science Technology Policy to ensure that the OFR/GPO partnership meets customer expectations. To follow through on our commitment, we are expanding and accelerating the development of FDsys to provide XML-structured content as rendered output. &nbsp;This will give users access to masses of data to reconfigure and redistribute as they wish to meet the specialized needs of their constituencies.
 
-## 1.1.Purpose
+## 1.1. Purpose
 
 The purpose of this document is to provide an overview of Code of Federal Regulations XML files and associated schema. The FDsys Bulk Data repository at http://www.gpo.gov/fdsys/bulkdata/ contains the Code of Federal Regulations in XML from 2007 to the present and additional years will be added as they become available. Please see FDsys at [www.fdsys.gov](http://www.fdsys.gov/) for access to the Code of Federal Regulations in PDF and HTML formats. &nbsp;
 
-## 1.2.Legal Status & Authenticity of Code of Federal Regulations files via Data.gov
+## 1.2. Legal Status & Authenticity of Code of Federal Regulations files via Data.gov
 
 &nbsp;
 
 **Q. What is the data set available for the Code of Federal Regulations in XML?**
 
-**A. ** Code of Federal Regulations files in XML have been converted and simplified from the SGML rendition used for the printed publication. The Code of Federal Regulations is available in XML starting with the year 2000, when GPO began composing the Code of Federal Regulations in SGML. OFR/GPO plan to convert the remaining electronic data set at a future date.
+**A.** Code of Federal Regulations files in XML have been converted and simplified from the SGML rendition used for the printed publication. The Code of Federal Regulations is available in XML starting with the year 2000, when GPO began composing the Code of Federal Regulations in SGML. OFR/GPO plan to convert the remaining electronic data set at a future date.
 
 &nbsp;
 
@@ -77,9 +77,12 @@ Our goal is to clean up the XML data and develop associated style sheets to the 
 **A.** The document markup and metadata found within bulk data files are generally reliable and complete.  However, there are variations in this underlying data due to inconsistencies in the composition and typesetting process. As a result, some data-mining applications and user aids may not produce 100 per cent accurate results. 
 
 &nbsp;
+
 **Q. What is the legal status of Code of Federal Regulations user aids?**
 
 **A.** Code of Federal Regulations user aids, including, finding aids, indexes, search tools, metadata associations, and tagging schemes are not part of the legal text of the _Code of Federal Regulations_. These ancillary features help users explore and extract data, but the official legal text stands on its own. No person should form absolute legal conclusions based on search results, finding aids, metadata associations, extractions of data, and the like. Ultimately, only the official text of the _Code of Federal Regulations_ may be relied upon as evidence in a court of law. 
+
+&nbsp;
 
 **Q. What is the authenticity of Code of Federal Regulations bulk data files after they have been downloaded to another site? &nbsp;**
 
@@ -99,7 +102,7 @@ Our goal is to clean up the XML data and develop associated style sheets to the 
 
 &nbsp;
 
-#2 Schema Description
+# 2. Schema Description
 
 The schema chosen to represent the Code of Federal Regulations is a simplified version of the SGML schema that is used as part of the print production process, with some presentation and print specific tags removed or collapsed, and then converted to well-formed XML. This schema was chosen for the following reasons:
 
@@ -166,7 +169,7 @@ The following table lists the SGML tags that were removed or collapsed into a so
 | SUBJ3L | Collapse to SUBJL | Third level lead subject in special indexes. |
 | SUBJ4L | Collapse to SUBJL | Fourth level lead subject in special indexes. |
 
-## 2.2 Table of Contents, Explanatory Text, Title Number, and Finding Aid Entries 
+## 2.2. Table of Contents, Explanatory Text, Title Number, and Finding Aid Entries 
 
 This section describes the top-level structure of Code of the Federal Regulations XML file.
 
@@ -230,7 +233,7 @@ An abbreviated example of the overall section and structure is below:
 </CFRDOC>
 ```
 
-### 2.2.2 XPath Examples
+### 2.2.2. XPath Examples
 
 The schema allows for a wide variety XPath commands for extracting items:
 
@@ -242,7 +245,7 @@ The schema allows for a wide variety XPath commands for extracting items:
 
 //SECTION[descendant::PRTPAGE/@P = 'iii'] ? Returns section contents which contains page iii.
 
-## 2.3 TITLE, CHAPTER, PART and SUBPART 
+## 2.3. TITLE, CHAPTER, PART and SUBPART 
 
 The TITLE, CHAPTER, PART and SUBPART tags are organized in an xml structure that is defined below and contains logical divisions in the Code of Federal Regulations. For example, each title is divided into chapters, which usually bear the name of the issuing agency. Each chapter is further subdivided into parts that cover specific regulatory areas. Large parts may be subdivided into subparts. All parts are organized in sections, and most citations in the CFR are provided at the section level.
 
@@ -329,7 +332,7 @@ The abbreviated example of the TITLE, CHAPTER, PART and SUBPART tags are shown b
 
 &nbsp;
 
-## 2.4.Cite This Code 
+## 2.4. Cite This Code 
 
 Cite this code section holds the first text line of cite this code pages followed by explanatory data. The contents of a CITE always includes a CITEP paragraph on the regulation. Cite this code section is followed by EXPLA section which explains the data of Code of Federal Regulations. The signature block is often followed by EXPLA section and may contain empty xml values. &nbsp; &nbsp;
 
@@ -406,7 +409,7 @@ An abbreviated example of the CITE and EXPLA section and structure is below:
 
 &nbsp;
 
-## 2.5.The Contents of Section
+## 2.5. The Contents of Section
 
 The contents of section tags are the ones that usually describe the majority of the data in the Code of Federal Regulations. In some cases, the section includes XML GPOTABLE tags which describe elements of tables and their data. Section tag always contains a section number which is usually followed by a subject of that section. A paragraph or XML tag P is used to denote large or small text in the section. In some cases, a section may also contain a citation.
 
@@ -467,7 +470,7 @@ The contents will roughly have the same structure:
 
 &nbsp;
 
-## 2.6.Chapter Tag
+## 2.6. Chapter Tag
 
 The CHAPTER tag holds contents that list agency names along with their code of Federal Regulations data. It contains chapter number entries and repeatable Code of Federal Regulations numbers heads.
 
@@ -521,7 +524,7 @@ An abbreviated example of the CHAPTER section and structure is below:
 
 &nbsp;
 
-## 2.7.ALPHLIST Tag
+## 2.7. ALPHLIST Tag
 
 The ALPHLIST tag contains list of agencies appearing in the Code of Federal Regulations documents. This information may include revised tag with a date along with repeatable agency tags and CFRID values. The XML tags and their descriptions of the ALPHLIST schema are shown below.
 
@@ -565,6 +568,6 @@ An abbreviated example of the ALPHLIST section and structure is below:
 
 &nbsp;
 
-# 3.Resources Directory
+# 3. Resources Directory
 
 The resources directory(http://www.gpo.gov/fdsys/bulkdata/CFR/resources) in the Code of Federal Regulations bulk data repository contains the current version of the XML schema, the XML stylesheet used to display the XML files in a browser on the FDsys website, and this user guide in PDF.
