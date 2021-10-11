@@ -1,6 +1,6 @@
-# Federal Digital System (FDsys) User Guide
+#Federal Digital System (FDsys) User Guide
 
-## Federal Register XML Rendition 
+##Federal Register XML Rendition 
 
 Prepared by:Office of Programs, Strategy, and Technology
 
@@ -8,14 +8,14 @@ Office of the Chief Technology Officer
 U.S. Government Publishing Office
  
 
-## Revision History
+##Revision History
 
 - 1.0 September 2009
   Initial publication
 - 1.1 March 2015
   Markdown version
 
-# 1. Introduction
+#1.Introduction
 
 The U.S. Government Printing Office (GPO) and the National Archives' Office of the Federal Register (OFR) partnership is offering bulk data downloads of Federal Register files to the general public via Data.gov and FDsys.  This effort began when the President challenged Federal agencies to create a more open and transparent government, promote accountability, and provide information to citizens about what their Government is doing (see 74 FR 4685, January 26, 2009 at [http://www.gpo.gov/fdsys/pkg/FR-2009-01-26/pdf/E9-1777.pdf](http://www.gpo.gov/fdsys/pkg/FR-2009-01-26/pdf/E9-1777.pdf)).  The Public Printer's letter of March 9, 2009 pledged to provide trusted information in whatever form is required to meet the President's objectives [http://www.gpo.gov/pdfs/news-media/letter\_030909.pdf](http://www.gpo.gov/pdfs/news-media/letter_030909.pdf).  
 
@@ -23,11 +23,11 @@ The U.S. Government Printing Office (GPO) and the National Archives' Office of t
 
 In addition, the Office of the Federal Register coordinates with the Office of Science Technology Policy to ensure that the OFR/GPO partnership meets customer expectations.   To follow through on our commitment, we are expanding and accelerating the development of FDsys to provide XML-structured content as rendered output.  This will give users access to masses of data to reconfigure and redistribute as they wish to meet the specialized needs of their constituencies.  
 
-## 1.1. Purpose
+##1.1.Purpose
 
 The purpose of this document is to provide an overview of Federal Register XML files and associated schema. The FDsys Bulk Data repository at [http://www.gpo.gov/fdsys/bulkdata/](http://www.gpo.gov/fdsys/bulkdata/) contains the Federal Register in XML from 2000 to the present. Please see FDsys at [www.fdsys.gov](http://www.fdsys.gov/) for access to the Federal Register in PDF and HTML formats.  
 
-## 1.2. Legal Status & Authenticity of Federal Register files via _Data.gov_
+##1.2.Legal Status & Authenticity of Federal Register files via _Data.gov_
 
  
 
@@ -90,7 +90,7 @@ Our goal is to clean up the XML data and develop associated style sheets to the 
 **A.** Re-publishers of Federal Register data may cite FDsys and OFR/GPO as the source of their data, and they are free to characterize the quality of data as it appears on their site. But private sector re-publishers are prohibited from using the seal of the National Archives and Records Administration (NARA) or stylized Federal Register logos identified in NARA regulations (36 CFR part 1200) on their products because that would unlawfully misrepresent the legal status of the material, and could falsely identify  private organizations as entities of the Federal Government.
 
 
-# 2. Schema Description
+#2.Schema Description
 
 The schema chosen to represent the Federal Register is a simplified version of the SGML schema that is used as part of the print production process, with some presentation and print specific tags removed or collapsed, and then converted to well-formed XML. This schema was chosen for the following reasons:
 
@@ -103,6 +103,8 @@ Since the schema is not an authoring schema and the SGML to XML conversion proce
 The schema being produced for this effort describes the data as it actually occurs from the OFR. Documents are not being cleaned up because they do not match the schema; instead, the schema was selectively relaxed. Such an approach maintains 100% fidelity to the original data, and eliminates any errors that might occur in schema interpretation or further data manipulation.
 
 The following table lists the SGML tags that were removed or collapsed into a source attribute in the Federal Register XML.
+
+ 
 
 | Purposed Fields to be Removed | Fields to be Removed or Collapsed | Description |
 | --- | --- | --- |
@@ -154,7 +156,7 @@ The following table lists the SGML tags that were removed or collapsed into a so
 | TSECT | Collapse to HD | Section head that turns sideways on the page.   |
 | FNC | Removed | Used to generate a new column |
 
-## 2.1. Sections Available in XML
+##2.1.Sections Available in XML
 
 The following are currently available in Federal Register XML:
 
@@ -176,13 +178,17 @@ The following are not currently available in Federal Register XML:
 - .Table of Effective Dates 
 - .Graphics 
 
-## 2.2. Sections, Parts, and Articles
+##2.2.Sections, Parts, and Articles
 
 This section describes the top-level structure of a Federal Register XML file.
 
 The XML schema, being a translated reproduction of the SGML schema, contains tags and content in the same order as they appear in the printed document. Major sections are grouped appropriately (<CNTNTS>, <RULES>, <PRORULES>, <NOTICES>, <NEWPART>, <CORRECT>), and all data and tags are represented – with the exception of the reduced tags from the previous section.
 
+ 
+
 The XML tags and their descriptions of the schema above are shown below:
+
+ 
 
 | XML Tag | Description |
 | --- | --- |
@@ -198,8 +204,13 @@ The XML tags and their descriptions of the schema above are shown below:
 | NOTICES | Starts Notices section of the Federal Register. Should contain at least one <NOTICE>. |
 | NOTICE | Start individual Notice within Notices section. |
 
+ 
+
+ 
+
 An abbreviated example of the overall section and structure is below:
 
+ 
 ```
 <FEDREG>
 
@@ -241,11 +252,10 @@ An abbreviated example of the overall section and structure is below:
 </FEDREG>
 ```
 
-### 2.2.1. XPath Examples
+###2.2.1.XPath Examples
 
 The schema allows for a wide variety XPath commands for extracting items:
 
-```
  //RULE    Output all rules
 
  (//PRTPAGE/@P)[0]    Get the first page number
@@ -257,14 +267,16 @@ The schema allows for a wide variety XPath commands for extracting items:
  //RULE[PREAMB/AGENCY = 'NUCLEAR REGULATORY COMMISSION']
 
     Get all rules for the nuclear regulatory commission
-```
+
  
 
-## 2.3. NEW PART Section 
+##2.3.NEW PART Section 
 
 The NEWPART section holds the contents of a part which often includes a part title and a list of notices, presidential documents, proposed rules, rules, and section names. A part number will always accompany the part title. In some cases, the specified rule will contain a preamble which can contain everything up to, but not including, the supplementary information.  
 
 The XML tags and their descriptions of the schema above are shown below:
+
+ 
 
 | XML Tag | Description |
 | --- | --- |
@@ -299,7 +311,7 @@ An abbreviated example of the NEWPART section and structure is below:
 </FEDREG>
 ```
 
-## 2.4. The Contents of Article
+##2.4.The Contents of Article
 
 The contents of article tags are the ones that usually describe the majority of the data in the Federal Register. For example, XML tags such as HD and P are often used to start the head sentence in the following section while P tag is used to describe the rest of the text. The flush paragraph or FP is used to denote either large or small text depending on where it is being used. In addition, the majority of the sections are also following by Federal Register doc number as well as an agency billing code.
 
@@ -362,7 +374,7 @@ The contents will roughly have the same structure
 ```
  
 
-## 2.5. PREAMBLE Tag
+##2.5.PREAMBLE Tag
 
 The PREAMBLE can hold contents that describe the current page of the document as well as agencies, sub agencies, actions, summaries, RIN numbers, and CFR citations. In general, a preamble tag can hold everything up to but not including the supplementary information. To view a complete list of valid fields, please see the XSD schema.
 
@@ -415,7 +427,7 @@ An abbreviated example of the PREAMB section and structure is below:
 ```
  
 
-## 2.6. SUPLINF Tag
+##2.6.SUPLINF Tag
 
 The SUPLINF tag holds supplementary information that describes Federal Register documents. This information may include the page number, list of subjects or regulatory text material from the Rules section. The list of subjects will also include a list of CFR numbers cited in the appropriate rules.
 
@@ -452,7 +464,7 @@ An abbreviated example of the SUPLINF section and structure is below:
 ```
  
 
-## 2.7. Presidential Documents
+##2.7.Presidential Documents
 
 The PRESDOCS tag must have one or more presidential documents which may include determinations, executive orders, memos, notices, or proclamations. A presidential notice, for example, will often have a title and presidential signature associated with it. It may also include the place of issuance which is usually "The White House." These items are always followed by Federal Register doc number, the date filed, and the billing code.
 
@@ -513,6 +525,6 @@ An abbreviated example of the PRESDOCS section and structure is below:
 ```
  
 
-# 3. Resources Directory
+#3.Resources Directory
 
 The resources directory in the _Federal Register_ bulk data repository at [http://www.gpo.gov/fdsys/bulkdata/FR/resources](http://www.gpo.gov/fdsys/bulkdata/FR/resources) contains the current version of the XML schema, the XML stylesheet used to display the XML files in a browser on the FDsys website, and this user guide in PDF.

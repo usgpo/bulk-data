@@ -97,12 +97,12 @@ Congress.
 
 ## Authenticity of Bill XML Files
 
-### Q. What is the data set available for bills in XML?
+###Q. What is the data set available for bills in XML?
 
 A. Bill files in XML are provided to GPO by the House of Representatives and Senate and are
 available starting in 2013 with the 113th Congress.
 
-### Q. How do the bulk XML files offered on the FDsys Bulk Data repository relate to the digitally signed PDF files available on FDsys?
+###Q. How do the bulk XML files offered on the FDsys Bulk Data repository relate to the digitally signed PDF files available on FDsys?
 
 A. GPO makes Congressional Bills from the 103rd Congress forward available on FDsys in
 digitally signed PDF and HTML formats. Generally, House and Senate bills from the 111th
